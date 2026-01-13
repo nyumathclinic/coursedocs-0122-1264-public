@@ -1,0 +1,541 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Template based on a syllabus by Mitch Keller -->
+<pretext xml:lang="en-US" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <!-- we first include a file which contains the docinfo element: -->
+  <xi:include href="../docinfo.ptx" />
+
+  <article xml:id="syllabus">
+    <title>MATH-UA 122 Calculus II</title>
+    <subtitle>Departmental Syllabus, Spring 2026 term</subtitle>
+
+    <!-- Include frontmatter -->
+    <xi:include href="../frontmatter.ptx" />
+
+    <p>
+      Calculus II is a coordinated course. This syllabus contains information shared across all lecture
+      sections. Your professors will also provide a syllabus supplement that contains information specific
+      to your lecture section.
+    </p>
+
+    <!-- Include chapters -->
+    <section xml:id="sec-course-info">
+      <title>Course Information</title>
+      <p>
+        <dl>
+          <li>
+            <title>Course Description</title>
+            <p>
+              Techniques of integration. Further applications. Plane analytic geometry. Polar coordinates
+              and parametric equations. Infinite series, including power series.
+            </p>
+          </li>
+          <li>
+            <title>Credits</title>
+            <p>
+              4
+            </p>
+          </li>
+          <li>
+            <title>Prerequisites</title>
+            <p>
+              MATH-UA 121 Calculus I, or exam credit, or placement test.
+              Visit the <url href="https://math.nyu.edu/dynamic/courses/undergrad/math-ua-122/">departmental course page</url> for more detail.
+            </p>
+          </li>
+          <li>
+            <title>Instructional modality</title>
+            <p>
+              Section 021 meets online for lecture and in-person for exams.
+              All other sections meet in-person.
+            </p>
+          </li>
+        </dl>
+      </p>
+
+      <p><q>The book of the universe is written in the language of mathematics.</q> Galileo wrote this four hundred years ago, even before Newton and Leibniz discovered calculus. The statement is as valid today as ever: We use functions in all the sciences, and calculus allows us to analyze the functions and draw scientific conclusions.
+      </p>
+
+      <p>
+        Calculus II is a second semester calculus course for students who have previously been introduced to the basic ideas of differential and integral calculus. Over the semester we will study three (related) topics, topics that form a central part of the language of modern science:
+
+        <ul>
+          <li>
+            <p>
+            applications and methods of integration, 
+            </p>
+          </li>
+          <li>
+            <p>
+            infinite series and the representation of functions by power series, and
+            </p>
+          </li>
+          <li>
+            <p>
+            parametric curves in the plane.
+            </p>
+          </li>
+        </ul>
+      </p>
+
+      <p>
+        The material we take up in this course has applications in physics, chemistry, biology, environmental science, astronomy, economics, statistics, and just about everything else. We want you to leave the course not only with computational ability, but with the ability to use these notions in their natural scientific contexts, and with an appreciation of their mathematical beauty and power.
+      </p>
+
+      <paragraphs>
+        <title>Learning Outcomes</title>
+        <p>
+          <ol>
+            <li>
+              <p>
+                Antidifferentiate elementary functions and evaluate definite integrals
+              </p>
+            </li>
+            <li>
+              <p>
+                Analyze sequences and series
+              </p>
+            </li>
+            <li>
+              <p>
+                Use calculus to analyze parametric and polar plane curves
+              </p>
+            </li>
+          </ol>
+        </p>
+      </paragraphs>
+      <paragraphs>
+        <title>Meeting Pattern</title>
+        <p>
+          Lecture sections meet twice weekly for 75 minutes, led by a professor.
+          Recitation sections meets once weekly for 75 minutes, led by a teaching assistant.
+          The times and locations of your sections are visible on <url href="https://albert.nyu.edu/">Albert</url>.
+        </p>
+      </paragraphs>
+      <paragraphs>
+        <title>How the Credit Hours are Met by the Course</title>
+        <p>
+          This class meets for 3 hours and 45 minutes each week and carries the
+          expectation that students will work on course learning activities
+          (e.g. reading, problem sets, papers, and studying) for about 7 hours
+          and 30 minutes outside of classroom per week. The syllabus includes
+          more information about meeting times and expectations for student
+          work.
+        </p>
+      </paragraphs>
+    </section>
+  <section xml:id="sec-activities">
+    <title>Learning Activities</title>
+    <p>
+      Most weeks will follow the same pattern of engagement with the course
+      material. It alternates between instruction and assessment, and is
+      designed for you to have many opportunities to practice, ask for help, and
+      get feedback on every topic. 
+    </p>
+    <paragraphs>
+      <title>Pre-lecture activities</title>
+      <p>
+        Before each lecture, you will be expected to complete a reading
+        assignment. The assignment may also include watching videos and
+        completing a basic quiz. The goal of these activities is to prepare you
+        for lecture. Your professor will also use your responses to these
+        activities to prepare for lecture.
+      </p>
+    </paragraphs>
+
+    <paragraphs>
+      <title>Lecture</title>
+      <p>
+        Lectures will be interactive, with opportunities for you to ask
+        questions and work on problems. Your professor will also use lecture to
+        reinforce new concepts and provide context.
+      </p>
+    </paragraphs>
+
+    <paragraphs>
+      <title>WebAssignments</title>
+      <p>
+        After lecture you will continue to practice the procedures and concepts
+        through a <q>WebAssignment</q>—that is, an assignment on the WebAssign platform. You
+        will have multiple opportunities to attempt these problems, and other
+        problems like them. WebAssignments are due before recitation.
+      </p>
+    </paragraphs> 
+
+    <paragraphs>
+      <title>Recitation</title>
+      <p>
+        Recitation is your weekly class time with your teaching assistant.
+        Recitation begins with a quiz and continues with supervised practice
+        on worksheets.
+      </p>
+    </paragraphs>
+
+    <paragraphs>
+      <title>Problem sets</title>
+      <p>
+        Problem sets are due at the end of each week. They are designed to
+        challenge you to apply the concepts into new or unique situations.
+        Problem sets are also where you learn to present worked solutions
+        clearly and logically.
+      </p>
+    </paragraphs>
+
+    <paragraphs>
+      <title>Exams</title>
+      <p>
+        There will be three chapter tests (70 minutes long, during lecture), and
+        one final exam (100 minutes long, during finals period). Chapter tests are
+        summative assessments and comprehensive of the course material taught
+        until that point. <em>Exams are designed
+        to test your mastery of the course material at a deep and synthetic
+        level, and whether you can apply it to new settings.</em>
+        The final will be cumulative. 
+      </p>
+    </paragraphs>
+  </section>
+  <section xml:id="sec-materials">
+    <title>Textbook and Other Required Materials</title>
+    <p>
+      <dl>
+        <li>
+          <title>Textbook</title>
+          <p>
+            The course will closely follow the textbook <pubtitle>Essential
+            Calculus, Early Transcendentals</pubtitle>, by James Stewart. An
+            electronic version of the text is included in WebAssign.
+          </p>
+        </li>
+        <li>
+          <title>WebAssign</title>
+          <p>
+            The required online homework platform for this course is <em>WebAssign for Essential Calculus</em> by Stewart.
+            As part of the university's <url
+            href="https://www.nyu.edu/about/leadership-university-administration/office-of-the-president/office-of-the-executivevicepresident/finance-and-budget/campus-services/nyu-campus-stores/included.html">Folett
+            ACCESS</url> program, it will be delivered to you digitally through a link in your section's Brightspace site. 
+            The cost of the platform including the book is $24.25, 
+            which will be added as a <q>book charge</q> to your bursar bill.
+            This is the only purchase you need to make for the course.
+          </p>
+          <p>
+            If you choose to purchase your course materials elsewhere, 
+            you must login to the <url href="https://includedcp.follett.com/2015">student portal</url> and opt out of the program.
+            Then you can buy access independently through the <url
+            href="https://www.bkstr.com/nyustore/home">NYU Bookstore</url>, or
+            within WebAssign itself. For most students, the lowest price will be
+            found through ACCESS.
+                         
+            <alert>If you do not opt out by February 4, you will be charged. 
+            If you do opt out, you are responsible for purchasing your own WebAssign access.</alert>
+          </p>
+        </li>
+        <li>
+          <title>Brightspace</title>
+          <p>
+            Each lecturer will have their own <url
+            href="https://brightspace.nyu.edu/">Brightspace</url> site, through
+            which they will distribute lecture and study materials.
+            Brightspace is your course hub which links to each of the other platforms used.
+          </p>
+        </li>
+        <li>
+          <title>Gradescope</title>
+          <p>
+            You will scan and submit your written homework to <url
+            href="https://gradescope.com/">Gradescope</url>. Homework will be
+            graded and returned to you within Gradescope. Quizzes and exams will
+            be taken on paper, but the instructional team will scan them and
+            upload them to Gradescope. Graded quizzes and midterms will be
+            returned to you using Gradescope. Regrades may be requested through
+            Gradescope within five (5) university business days of the scores
+            being published.
+          </p>
+        </li>
+        <li>
+          <title>Discussion boards</title>
+          <p>
+            Lecture sections may use <url href="https://edstem.org/">Ed Discussions</url>, 
+            <url href="https://campuswire.com/">Campuswire</url>, or the Brightspace
+            Discussions tool to organize questions and discussion outside of class. 
+          </p>
+        </li>
+        <li>
+          <title>PollEverywhere</title>
+          <p>
+            Lecturers may use <url href="https://polleverywhere.com/">PollEverywhere</url>
+            or other polling software to facilitate in-class discussion. 
+          </p>
+        </li>
+      </dl>
+    </p>
+  </section>
+  <section xml:id="sec-grading">
+    <title>Grading</title>
+    <p>
+      Most of the grade components are identified above. Participation will be
+      measured through attendance, completion of in-class activities, and written homework.
+      The exact rubric may vary across lecture sections.
+    </p>
+    <p>
+      We will only count the top <em>half</em> of your quizzes and
+      required WebAssignments, or as close to half as possible without going over if the total number is odd.
+      This should wash out the effects of any unforeseen circumstances which prevent you from
+      attending recitation or completing an assignment to the best of your
+      ability. <em>There will be no other extensions or makeups beyond this generous drop policy</em>.
+    </p>
+    <p>
+      The grade components are averaged into a final calculated grade using the following weights:
+    </p>
+    <tabular>
+      <row header="yes" bottom="minor">
+        <cell>Component</cell>
+        <cell>Weight</cell>
+      </row>
+      <row>
+        <cell>Quizzes</cell>
+        <cell>5%</cell>
+      </row>
+      <row>
+        <cell>WebAssignments</cell>
+        <cell>5%</cell>
+      </row>
+      <row>
+        <cell>Chapter 6 Test</cell>
+        <cell>20%</cell>
+      </row>
+      <row>
+        <cell>Chapter 7 Test</cell>
+        <cell>20%</cell>
+      </row>
+      <row>
+        <cell>Chapter 8 Test</cell>
+        <cell>20%</cell>
+      </row>
+      <row>
+        <cell>Final exam</cell>
+        <cell>25%</cell>
+      </row>
+      <row>
+        <cell>Participation</cell>
+        <cell>5%</cell>
+      </row>
+    </tabular>
+    <p>
+      Grades will be calculated to two decimal places. They will <em>not</em> be
+      rounded up to the next whole number. The lower cutoff for each letter
+      grade is given in the table below. 
+    </p>
+    <tabular>
+      <col halign="center"/><col />
+      <row header="yes" bottom="minor">
+        <cell>Letter Grade</cell>
+        <cell>Lower Cutoff</cell>
+      </row>
+      <row>
+        <cell>A</cell>
+        <cell>93%</cell>
+      </row>
+      <row>
+        <cell>A-</cell>
+        <cell>90%</cell>
+      </row>
+      <row>
+        <cell>B+</cell>
+        <cell>87%</cell>
+      </row>
+      <row>
+        <cell>B</cell>
+        <cell>83%</cell>
+      </row>
+      <row>
+        <cell>B-</cell>
+        <cell>80%</cell>
+      </row>
+      <row>
+        <cell>C+</cell>
+        <cell>75%</cell>
+      </row>
+      <row>
+        <cell>C</cell>
+        <cell>65%</cell>
+      </row>
+      <row>
+        <cell>D</cell>
+        <cell>50%</cell>
+      </row>
+      <row>
+        <cell>F</cell>
+        <cell>0%</cell>
+      </row>
+    </tabular>
+    <p>
+      It is possible that these cutoffs will be adjusted at the end of the
+      semester, but only in the downward direction in order to raise letter
+      grades slightly. There is no school- or departmentally-prescribed
+      distribution of letter grades. Letter grades across sections will be
+      comparable.
+    </p>
+  </section>
+  <section xml:id="sec-help">
+    <title>Extra help and tutoring</title>
+    <p>
+      In large lecture classes, there is only a limited amount of time for
+      direct instruction by the professor. Therefore, it is important that you
+      take advantage of other resources available to you. This includes your
+      office hours, recitation, discussion boards, and study groups with
+      classmates. The University also provides a few options for extra help:
+      <ul>
+        <li>
+          <p>
+            The <url
+            href="https://www.nyu.edu/students/academic-services/undergraduate-advisement/academic-resource-center/tutoring-and-learning.html">University
+            Learning Center</url> offers a variety of services, including
+            drop-in tutoring and review sessions. More
+            information and schedules can be found on their website.            
+          </p>
+        </li>
+        <li>
+          <p> 
+            The Department of Mathematics runs an <url
+            href="https://math.nyu.edu/dynamic/undergrad/tutoring/">Undergraduate
+            Tutoring Center</url> in Warren Weaver Hall, room 505. More
+            information and a schedule can be found on their website.
+          </p>
+        </li>
+      </ul>      
+    </p>
+  </section>
+  <section xml:id="sec-inst-statements">
+    <title>Policy statements</title>
+    <p>
+      These are adapted from departmental and university policies.
+    </p>
+    <subsection xml:id="subsec-accessibility">
+      <title>Student Accessibility</title>
+      <p>
+        New York University is committed to providing equal educational
+        opportunity and participation for students with disabilities or
+        accessibility concerns. It is the University's policy that no qualified
+        student with a disability or accessibility concern be excluded from
+        participating in any University program or activity, denied the benefits
+        of any University program or activity, or otherwise subjected to
+        discrimination with regard to any University program or activity. The
+        <url
+        href="https://www.nyu.edu/life/global-inclusion-and-diversity/centers-and-communities/accessibility.html">Moses
+        Center for Accessibility and Inclusive Culture</url> determines
+        qualified disability status and assists students in obtaining
+        appropriate accommodations and services. CSA operates according to an
+        Independent Living Philosophy and strives in its policies and practices
+        to empower each student to become as independent as possible. Their
+        services are designed to encourage independence, backed by a strong
+        system of support. Any student who needs a reasonable accommodation
+        based on a qualified disability or accessibility issue is required to
+        register with the CSA for assistance.
+      </p>
+    </subsection>
+    <subsection xml:id="subsec-religion">
+      <title>Religious Observations</title>
+      <p>
+        <url
+        href="https://www.nyu.edu/students/communities-and-groups/student-diversity/spiritual-life/religious-and-spiritual-life-on-campus/resources-faculty-staff.html">NYU’s
+        Calendar Policy on Religious Holidays</url> states that members of any
+        religious group may, without penalty, absent themselves from classes
+        when required in compliance with their religious obligations. You must
+        notify your professor in advance of religious holidays or observances
+        that might coincide with exams, assignments, or class times to schedule
+        mutually acceptable alternatives. Students may also contact
+        <url href="mailto:religiousaccommodations@nyu.edu">religiousaccommodations@nyu.edu</url> for assistance.
+      </p>
+    </subsection>
+    <subsection xml:id="subsec-dei">
+      <title>Diversity, Equity, and Inclusion</title>
+      <p>
+        As instructors, we will strive to create a safe, respectful, and
+        inclusive environment for all students regardless of their identity. We
+        recognize and value diversity inside and outside of the classroom, and
+        recognize that each student has a unique contribution to make and brings
+        with them different strengths and weaknesses. We welcome your ideas for
+        how to promote a better understanding and deeper learning in this class
+        as a community. Please feel free to ask questions, to participate in
+        discussions, and to suggest new approaches to the class content. Please
+        also feel welcome to raise any issue you may have in class or outside of
+        class, including reporting incidents of bias or discrimination, whether
+        intentional or unintentional, either to your instructor, to your
+        advisor(s)/mentor(s), or by using the <url href="https://www.nyu.edu/about/policies-guidelines-compliance/equal-opportunity/bias-response.html">NYU Bias Response Line</url>.
+      </p>
+    </subsection>
+    <subsection xml:id="subsec-academic-integrity">
+      <title>Academic Integrity</title>
+      
+      <p>
+        All students are expected to abide by the CAS Honor Code to be found in
+        the <url href="https://cas.nyu.edu/academic-integrity.html">Academic
+        Policies</url> page. Academic integrity is part of your reputation as a
+        responsible student and adult. Violations of the policy are a breach of
+        the trust between professor and student. It is unfair to your fellow
+        students, to the faculty, and to yourself.
+      </p>
+
+      <p>
+        The following are considered violations of academic integrity:
+        <ol>
+          <li>
+            <p>
+              Copying answers from Wolfram Alpha, Symbolab, ChatGPT, or any
+              other computational or large language models website. You can use
+              technology to check your work, but if you submit it without
+              thought you are cheating yourself of the point of the exercise.              
+            </p>
+          </li>
+          <li>
+            <p>
+              Copying answers to problems from another website such as Chegg,
+              Math Stack Exchange, Yahoo! Answers, etc. The graders will be able
+              to detect if you've copied your work. Aside from the integrity
+              issue, students who short-circuit the homework process usually do
+              not do well on quizzes and exams.              
+            </p>
+          </li>
+          <li>
+            <p>
+              Sharing answers with other students in an unofficial group or server
+            </p>
+          </li>
+          <li>
+            <p>
+              Discussing quizzes and exams at any time the quiz or exam is active
+            </p>
+          </li>
+          <li>
+            <p>
+              Arranging for another person to take a quiz or exam in your stead
+            </p>
+          </li>
+          <li>
+            <p>
+              Altering graded work to raise scores
+            </p>
+          </li>
+          <li>
+            <p>
+              Fabricating excuses or forging documentation for makeup exams
+            </p>
+          </li>
+        </ol>        
+        This list should not be considered exhaustive. 
+      </p>
+      <p>
+        If a student submits work that is not their own, with the intention to
+        deceive the instructor, then the instructor has no way to evaluate the
+        student’s learning.  This usually results in a score of zero, at a
+        minimum.  Additionally, any such findings will be reported to the
+        applicable dean in the student’s school, for recordkeeping and possible
+        further disciplinary action.
+      </p>
+      <p>
+        Please also abide by the NYU <url href="https://nyu.service-now.com/sp?id=kb_article&amp;sysparm_article=KB0013529&amp;sys_kb_id=4f2efc9b0f8982804d20348ce1050eb7&amp;spa=1">policy on illegal downloading of
+        copyrighted material</url>, including textbooks.
+      </p>
+    </subsection>
+  </section>
+</article>
+</pretext>
