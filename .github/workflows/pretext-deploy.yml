@@ -51,7 +51,7 @@ jobs:
           git config user.email "${{ github.actor }}@github_actions.no_reply"
 
       - name: install deps
-        run: pip install -r requirements.txt --break-system-packages
+        run: pip install -r pretext/requirements.txt --break-system-packages
 
       - name: install local ptx files
         run: pretext --version
