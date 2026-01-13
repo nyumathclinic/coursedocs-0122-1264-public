@@ -26,6 +26,57 @@ pretext build slides -i source/slides/chapter2.ptx
 
 In either case, you will need to uncomment the "slide" targets inside `project.ptx`.
 
+### Stripping private content
+
+(MPL 2026-01-13)
+
+A public repository is needed to publish GitHub pages. But you may not want to have solutions and answers to exercises in public-facing source code. Follow the workflow below to have private and public repostories:
+
+1. Make sure the repository with solutions is private. For the purposes of this checklist, call it `coursedocs`.
+
+2. Create a new, empty, public repository on GitHub. I recommend you just add `-public` to the private repository name. The repository owner (user or organization) should be the same on both.
+
+3. Initialize the empty, public repository by running this (or something similar) in an empty directory.
+
+```bash
+echo "# coursedocs-public" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/nyumathclinic/coursedocs-public.git
+git push -u origin main
+```
+
+4. Go to GitHub → profile menu → Settings → Developer settings → Personal access tokens. Generate a new fine-grained token.
+
+  * The resource owner should be the organization that owns both
+    the private and public repositories
+
+  * The expiration date should be later than the end of the term.
+
+  * Only select repositories: select both the private and the
+    public repositories.
+
+  * Permissions: Contents → Read/Write; Metadata → Read (auto)
+    That’s enough to clone private and push to public.
+
+  * Generate and copy the token. Keep it in a Stickie note or
+    some other temporary place, because GitHub will only show it once.
+
+5. Add the token to the private repo's secrets:
+
+  * Private repo → Settings → Secrets and variables → Actions 
+    → New repository secret.
+
+  * Name: `PAT_TOKEN`. Value: *paste the token*. Save.
+
+6. Ensure Actions can use secrets (Repo Settings → Actions → General → allow GitHub Actions to use repository secrets).
+
+7. Update `.github/workflows/sync-public-repo.yml` to have the right repository names and path names.
+
+8. Test and fix.
+
 ### Creating a landing page for multiple targets
 
 Build the entire course with:
