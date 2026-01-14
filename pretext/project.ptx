@@ -22,9 +22,9 @@
     <target name="activities-print" format="pdf" source="activities.ptx"
             output-filename="activities.pdf" publication="publication.ptx" />
 
-
+    <!-- removed deploy-dir="notes" since this source file doesn't exist yet -->
     <target name="notes-web" format="html" source="notes.ptx"
-            publication="publication.ptx" deploy-dir="notes" />
+            publication="publication.ptx" />
     <target name="notes-print" format="pdf" source="notes.ptx"
             publication="publication.ptx" output-filename="notes.pdf"/>
 
