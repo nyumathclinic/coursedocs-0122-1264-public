@@ -16,8 +16,9 @@
     <target name="psets-print" format="pdf" source="psets.ptx"
             output-filename="psets.pdf" publication="publication.ptx" />
 
+    <!-- removed deploy-dir="worksheets" since this source file doesn't exist yet -->
     <target name="activities-web" format="html" source="activities.ptx"
-            publication="publication.ptx" deploy-dir="worksheets" />
+            publication="publication.ptx" />
     <target name="activities-print" format="pdf" source="activities.ptx"
             output-filename="activities.pdf" publication="publication.ptx" />
 
