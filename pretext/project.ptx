@@ -10,8 +10,9 @@
     <target name="syllabus-print" source="syllabus/syllabus.ptx" format="pdf"
             output-filename="syllabus.pdf" publication="publication-syllabus.ptx" />
 
+            
     <target name="psets-web" format="html" source="psets.ptx"
-            publication="publication.ptx" deploy-dir="psets" />
+            publication="publication.ptx" deploy-dir-disabled="psets" />
     <target name="psets-print" format="pdf" source="psets.ptx"
             output-filename="psets.pdf" publication="publication.ptx" />
 
