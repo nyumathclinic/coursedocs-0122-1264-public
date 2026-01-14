@@ -57,12 +57,20 @@ jobs:
         run: pretext --version
         working-directory: ./pretext
 
-      - name: build deploy targets
+      - name: build targets to be deployed
         run: pretext build --deploys
         working-directory: ./pretext
 
-      - name: run deploy
+      - name: symlink parent .git to pretext
+        run: ln -s ../.git .git
+        working-directory: ./pretext
+
+      - name: deploy targets
         run: pretext deploy --no-push
+        working-directory: ./pretext
+
+      - name: remove pretext .git symlink
+        run: rm -f .git
         working-directory: ./pretext
 
       - name: push gh-pages branch
