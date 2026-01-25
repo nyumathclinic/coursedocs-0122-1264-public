@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<pretext xmlns:xi="http://www.w3.org/2001/XInclude">
+  <xi:include href="../docinfo.ptx" />
+  <article xml:id="sec-psets-mw" >
+    <title>Problem Sets (MW Sections)</title>
+
+    <xi:include href="../frontmatter.ptx" />
+    <introduction>
+      <p>
+        These activities are designed to be used in class to help students understand the material.
+        They are not graded, but students are encouraged to work on them in groups and ask the instructor for help when needed.
+      </p>
+    </introduction>
+
+    <xi:include href="./ps01-mw.ptx" xpointer="xpointer(//section[1])"/>
+    <xi:include href="./ps02-mw.ptx" xpointer="xpointer(//section[1])"/>
+    <xi:include href="./ps03-mw.ptx" xpointer="xpointer(//section[1])"/>
+    <xi:include href="./ps05-mw.ptx" xpointer="xpointer(//section[1])"/>
+    <xi:include href="./ps06.ptx" xpointer="xpointer(//section[1])"/>
+    <xi:include href="./ps07.ptx" xpointer="xpointer(//section[1])"/>
+    <xi:include href="./ps08.ptx" xpointer="xpointer(//section[1])"/>
+    <xi:include href="./ps09.ptx" xpointer="xpointer(//section[1])"/>
+    <xi:include href="./ps10.ptx" xpointer="xpointer(//section[1])"/>
+    <xi:include href="./ps11.ptx" xpointer="xpointer(//section[1])"/>
+    <xi:include href="./ps12.ptx" xpointer="xpointer(//section[1])"/>
+    <xi:include href="./ps13.ptx" xpointer="xpointer(//section[1])"/>
+    <xi:include href="./ps14.ptx" xpointer="xpointer(//section[1])"/>
+    <xi:include href="./ps15.ptx" xpointer="xpointer(//section[1])"/>
+  </article>
+</pretext>

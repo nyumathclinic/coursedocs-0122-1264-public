@@ -1,0 +1,196 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<pretext xmlns:ns0="http://www.w3.org/2001/XInclude" xmlns:ns1="https://prefigure.org">
+  <ns0:include href="../docinfo.ptx" />
+  <article>
+    <section xml:id="ps15-section">
+      <title>Problem Set 15</title>
+
+      <subtitle>Polar Coordinates</subtitle>
+      <introduction>
+        <p>
+          This problem set focuses on applications of integration in polar coordinates, including finding areas and arc lengths of polar curves.
+        </p>
+
+        <p>
+          These problems will be scored on completion only.
+        </p>
+      </introduction>
+
+      <exercises>
+      <exercise xml:id="ex-polar-to-cartesian">
+        <statement>
+          <p>
+            Convert the polar equation <m>r=2\cos\theta</m> to a Cartesian equation.
+          </p>
+        </statement>
+
+        </exercise>
+
+      <exercise xml:id="ex-cartesian-to-polar">
+        <statement>
+          <p>
+            Convert the Cartesian equation <m>y=x^2</m> to a polar equation.
+          </p>
+        </statement>
+
+        </exercise>
+
+      <exercise xml:id="ex-Rogawski-12-01-53">
+        <introduction>
+          <p>
+            The curve with polar equation <m>r^2=\cos 2\theta</m> is called a <alert>lemniscate</alert> .
+          </p>
+
+          <image width="60%">
+            <ns1:prefigure label="ex-Rogawski-12-01-53-figure">
+            <ns1:diagram dimensions="(300,300)" margins="5">
+            <ns1:definition>
+NyuViolet="#57068c"
+            </ns1:definition>
+
+            <ns1:definition>
+UltraViolet="#8900e1"
+            </ns1:definition>
+
+            <ns1:definition>
+MediumViolet1="#702b9d"
+            </ns1:definition>
+
+            <ns1:definition>
+MediumViolet2="#7b5aa6"
+            </ns1:definition>
+
+            <ns1:definition>
+LightViolet1="#ab82c5"
+            </ns1:definition>
+
+            <ns1:definition>
+LightViolet2="#eee6f3"
+            </ns1:definition>
+
+            <ns1:definition>
+f(t) = sqrt(cos(2*t))
+            </ns1:definition>
+            <ns1:coordinates bbox="(-1.25,-1.25,1.25,1.25)">
+            <ns1:group>
+            <ns1:graph function="f" domain="(-pi/4,pi/4)" coordinates="polar" closed="yes" />
+            <ns1:graph function="f" domain="(3*pi/4,5*pi/4)" coordinates="polar" closed="yes" />
+            </ns1:group>
+            <ns1:grid-axes coordinates="polar" spacings="((0,0.5,1),(0,30,360))" xlabel="x" ylabel="y" spacing-degrees="yes" stroke="gray" />
+            </ns1:coordinates>
+            </ns1:diagram>
+            </ns1:prefigure>
+          </image>
+        </introduction>
+
+
+        <task>
+          <statement>
+            <p>
+              Use implicit differentiation to find <m>\frac{dr}{d\theta}</m> on the curve.
+            </p>
+          </statement>
+
+          </task>
+
+
+        <task>
+          <statement>
+            <p>
+              Find all points on the lemniscate where the tangent line is horizontal.
+            </p>
+          </statement>
+
+          </task>
+      </exercise>
+
+      <exercise xml:id="ex-polar-area">
+        <statement>
+          <p>
+            Find the area enclosed by one loop of the four-leaved rose given by the polar equation <m>r=\sin(2\theta)</m>.
+          </p>
+        </statement>
+
+        </exercise>
+
+      <exercise xml:id="ex-polar-arc-length">
+        <statement>
+          <p>
+            Find the length of the spiral <m>r=e^\theta</m> for <m>0 \le \theta \le \pi</m>.
+          </p>
+        </statement>
+
+        </exercise>
+
+      <exercise xml:id="ex-polar-area-between-curves">
+        <statement>
+          <p>
+            Find the area of the region that lies inside the circle <m>r=3\cos\theta</m> and outside the cardioid <m>r=1+\cos\theta</m>.
+          </p>
+        </statement>
+
+        </exercise>
+
+      <exercise xml:id="ex-polar-arc-length-2">
+        <statement>
+          <p>
+            Find the length of the cardioid <m>r=1+\cos\theta</m>.
+          </p>
+        </statement>
+
+        </exercise>
+
+      <exercise xml:id="ex-Rogawski-12-02-10">
+        <statement>
+          <p>
+            In Problem Set 11 we studied the lemniscate curve <m>r^2 = \cos(2\theta)</m>.
+            Find the area enclosed by one loop of the lemniscate.
+          </p>
+
+          <image width="60%">
+            <ns1:prefigure label="ex-Rogawski-12-02-10-figure">
+            <ns1:diagram dimensions="(300,300)" margins="5">
+            <ns1:definition>
+NyuViolet="#57068c"
+            </ns1:definition>
+
+            <ns1:definition>
+UltraViolet="#8900e1"
+            </ns1:definition>
+
+            <ns1:definition>
+MediumViolet1="#702b9d"
+            </ns1:definition>
+
+            <ns1:definition>
+MediumViolet2="#7b5aa6"
+            </ns1:definition>
+
+            <ns1:definition>
+LightViolet1="#ab82c5"
+            </ns1:definition>
+
+            <ns1:definition>
+LightViolet2="#eee6f3"
+            </ns1:definition>
+
+            <ns1:definition>
+f(t) = sqrt(cos(2*t))
+            </ns1:definition>
+            <ns1:coordinates bbox="(-1.25,-1.25,1.25,1.25)">
+            <ns1:group>
+            <ns1:graph function="f" domain="(-pi/4,pi/4)" coordinates="polar" closed="yes" fill="#ab82c5" />
+            <ns1:graph function="f" domain="(3*pi/4,5*pi/4)" coordinates="polar" closed="yes" />
+            </ns1:group>
+            <ns1:grid-axes coordinates="polar" spacings="((0,0.5,1),(0,30,360))" xlabel="x" ylabel="y" spacing-degrees="yes" stroke="gray" />
+            </ns1:coordinates>
+            </ns1:diagram>
+            </ns1:prefigure>
+          </image>
+        </statement>
+
+        </exercise>
+      </exercises>
+    </section>
+  </article>
+</pretext>

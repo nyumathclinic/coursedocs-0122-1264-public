@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<pretext xmlns:ns0="http://www.w3.org/2001/XInclude">
+  <ns0:include href="../docinfo.ptx" />
+  <article>
+    <section xml:id="ps05-section">
+      <title>Problem Set 5 (TR Sections)</title>
+      <subtitle>Improper Integrals and Chapter 6 Review</subtitle>
+      <ns0:include href="ps01-tr.ptx" xpointer="xpointer(//section[1]/introduction)" />
+      <exercises>
+
+        <exercise xml:id="ex-improper-integral-type-2">
+          <statement>
+            <p> Determine if the integral <me>\int_0^1 \frac{1}{\sqrt{x}} \,dx</me> converges or
+              diverges. If it converges, find its value. </p>
+          </statement>
+          </exercise>
+
+
+        <exercise xml:id="ex-improper-integral-type-1">
+          <statement>
+            <p> Determine if the integral <me>\int_1^\infty \frac{1}{x^3} \,dx</me> converges or
+              diverges. If it converges, find its value. </p>
+          </statement>
+          </exercise>
+
+      </exercises>
+    </section>
+  </article>
+</pretext>

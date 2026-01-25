@@ -1,0 +1,157 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<pretext xmlns:ns0="http://www.w3.org/2001/XInclude" xmlns:ns1="https://prefigure.org">
+  <ns0:include href="../docinfo.ptx" />
+  <article>
+    <section xml:id="ps08-section">
+      <title>Problem Set 8</title>
+
+      <subtitle>Ordinary Differential Equations</subtitle>
+      <ns0:include href="ps01-tr.ptx" xpointer="xpointer(//section[1]/introduction)" />
+      <exercises>
+        <exercise xml:id="ex-mixing-problem">
+          <introduction>
+            <p> A tank initially contains <m>w</m> <quantity>
+                <unit base="liter" />
+              </quantity> of a solution in which is dissolved <m>
+              A_0</m> grams of chemical. A solution containing <m>k</m> <quantity>
+                <unit base="gram" />
+                <per base="liter" />
+              </quantity> of this chemical flows into the tank
+              at a rate of <m>r</m> <quantity>
+                <unit base="liter" />
+                <per base="minute" />
+              </quantity>, and the mixture flows out at the
+              same rate. </p>
+            <p> Let <m>A(t)</m> be the mass of chemical in the tank at time <m>t</m>. </p>
+          </introduction>
+          <task>
+            <statement>
+              <p> Find a differential equation and initial value problem satisfied by <m>A(t)</m>. </p>
+            </statement>
+            </task>
+          <task>
+            <statement>
+              <p> Solve this initial value problem for <m>A(t)</m>. </p>
+            </statement>
+            </task>
+          <task>
+            <statement>
+              <p> Show that as <m>t\to\infty</m>, the concentration of chemical in the tank
+                approaches <m>k</m> <quantity>
+                  <unit base="gram" />
+                  <per base="liter" />
+                </quantity>. Is this result reasonable?
+                Explain. </p>
+            </statement>
+            </task>
+        </exercise>
+
+        <exercise xml:id="ex-Rogawski-10-03-12">
+          <introduction>
+            <p> A tissue culture grows until it has a maximum area of <m>M</m><quantity>
+                <unit prefix="centi" base="meter" exp="2" />
+              </quantity>. The area <m>
+              A(t)</m> of the culture at time <m>t</m> may be modeled by the differential equation <me>
+              \frac{dA}{dt} = k \sqrt{A} \left(1 - \frac{A}{M}\right)
+              </me>
+              where <m>k</m> is a growth constant. </p>
+          </introduction>
+          <task>
+            <statement>
+              <p> Let <m>u = \sqrt{A}</m>. Show that <me>
+                  \frac{du}{dt} = \frac{k}{2}\left(1- \frac{u^2}{M}\right)
+                </me>
+              </p>
+            </statement>
+            </task>
+          <task>
+            <statement>
+              <p> Use separation of variables to find the general solution for <m>u(t)</m>. </p>
+            </statement>
+            </task>
+          <task>
+            <statement>
+              <p> Finally, find the general solution for <m>A(t)</m>. </p>
+            </statement>
+            </task>
+        </exercise>
+
+        <exercise xml:id="ex-match-slope-fields">
+          <statement>
+            <p> Match the differential equation with its slope field. <ol>
+                <li>
+                  <m>
+                    \frac{dy}{dt} = y+t
+                  </m>
+                </li>
+
+                <li>
+                  <m>
+                    \frac{dy}{dt} = yt
+                  </m>
+                </li>
+
+                <li>
+                  <m>
+                    \frac{dy}{dt} = y-1
+                  </m>
+                </li>
+              </ol>
+            </p>
+            <figure xml:id="fig-slope-fields">
+              <caption>Three slope fields</caption>
+              <sidebyside widths="30% 30% 30%">
+                <figure>
+                  <caption>Slope field A</caption>
+                  <image>
+                    <ns1:prefigure label="prefig-slope-field-a">
+                      <ns1:diagram dimensions="(300,300)" margins="10">
+                        <ns1:definition>f(t,y) = t*y</ns1:definition>
+                        <ns1:coordinates bbox="[-4,-4,4,4]">
+                          <ns1:grid-axes xlabel="t" ylabel="y" />
+                          <ns1:slope-field function="f" stroke="#57068c" />
+                          <ns1:label anchor="(0,-4)" alignment="n">(A)</ns1:label>
+                        </ns1:coordinates>
+                      </ns1:diagram>
+                    </ns1:prefigure>
+                  </image>
+                </figure>
+                <figure>
+                  <caption>Slope field B</caption>
+                  <image>
+                    <ns1:prefigure label="prefig-slope-field-b">
+                      <ns1:diagram dimensions="(300,300)" margins="10">
+                        <ns1:definition>f(t,y) = t+y</ns1:definition>
+                        <ns1:coordinates bbox="[-4,-4,4,4]">
+                          <ns1:grid-axes xlabel="t" ylabel="y" />
+                          <ns1:slope-field function="f" stroke="#57068c" />
+                          <ns1:label anchor="(0,-4)" alignment="n">(B)</ns1:label>
+                        </ns1:coordinates>
+                      </ns1:diagram>
+                    </ns1:prefigure>
+                  </image>
+                </figure>
+                <figure>
+                  <caption>Slope field C</caption>
+                  <image>
+                    <ns1:prefigure label="prefig-slope-field-c">
+                      <ns1:diagram dimensions="(300,300)" margins="10">
+                        <ns1:definition>f(t,y) = y-1</ns1:definition>
+                        <ns1:coordinates bbox="[-4,-4,4,4]">
+                          <ns1:grid-axes xlabel="t" ylabel="y" />
+                          <ns1:slope-field function="f" stroke="#57068c" />
+                        </ns1:coordinates>
+                      </ns1:diagram>
+                    </ns1:prefigure>
+                  </image>
+                </figure>
+              </sidebyside>
+            </figure>
+          </statement>
+
+          </exercise>
+
+      </exercises>
+    </section>
+  </article>
+</pretext>

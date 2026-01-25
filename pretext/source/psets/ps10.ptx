@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<pretext xmlns:ns0="http://www.w3.org/2001/XInclude">
+    <ns0:include href="../docinfo.ptx" />
+    <article>
+        <section xml:id="ps10-section">
+            <title>Problem Set 10</title>
+
+            <subtitle>Sequences and Series</subtitle>
+            <ns0:include href="ps01-tr.ptx" xpointer="xpointer(//section[1]/introduction)" />
+            <exercises>
+
+                <exercise xml:id="ex-integral-test">
+                    <task>
+                        <statement>
+                            <p> Use the integral test to determine if the series <m>\sum_{n=2}^\infty
+                                \frac{1}{n^3-n^2+n-1}</m> converges. Evaluate the improper integral. </p>
+                        </statement>
+                        </task>
+                    <task>
+                        <statement>
+                            <p> Use the limit comparison test to determine if the series <m>\sum_{n=2}^\infty
+                                \frac{1}{n^3-n^2+n-1}</m> converges. </p>
+                        </statement>
+                        </task>
+                    <task>
+                        <statement>
+                            <p>
+                                Compare and contrast the two methods.
+                            </p>
+                        </statement>
+                        </task>
+                </exercise>
+
+                <exercise xml:id="ex-comparison-test">
+                    <task>
+                        <statement>
+                            <p> Use the comparison test to determine whether the series <m>\sum_{n=1}^\infty
+                                \frac{\cos^2 n}{n^2+1}</m> converges or diverges. </p>
+                        </statement>
+
+                        </task>
+                    <task>
+                        <statement>
+                            <p>
+                                Can the limit comparison test be used instead? Why or why not?
+                            </p>
+                        </statement>
+                        </task>
+                </exercise>
+            </exercises>
+        </section>
+    </article>
+</pretext>

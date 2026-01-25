@@ -1,0 +1,189 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<pretext xmlns:ns0="http://www.w3.org/2001/XInclude" xmlns:ns1="https://prefigure.org">
+  <ns0:include href="../docinfo.ptx" />
+  <article>
+    <section xml:id="ps09-section">
+      <title>Problem Set 9</title>
+
+      <subtitle>Sequences and Series</subtitle>
+      <ns0:include href="ps01-tr.ptx" xpointer="xpointer(//section[1]/introduction)" />
+      <exercises>
+      <exercise xml:id="ex-sequences-converge">
+        <statement>
+          <p>
+            Determine the limits of the following sequences, if they exist:
+            <ol>
+              <li xml:id="ex-Rogawski-11-01-18">
+                <p>
+                  <m>a_n = \dfrac{4+n-3n^2}{4n^2+1}</m>
+                </p>
+              </li>
+
+              <li xml:id="ex-Rogawski-11-01-59">
+                <p>
+                  <m>a_n = \dfrac{3-4^n}{2+7\cdot 4^n}</m>
+                </p>
+              </li>
+
+              <li xml:id="ex-Rogawski-11-01-62">
+                <p>
+                  <m>a_n = n \sin \left(\frac{\pi}{n}\right)</m>
+                </p>
+              </li>
+            </ol>
+          </p>
+        </statement>
+
+        </exercise>
+
+      <exercise xml:id="ex-Rogawski-11-01-64">
+        <statement>
+          <p>
+            Use L'Hôpital's Rule to evaluate
+            <me>
+              \lim_{n\to\infty} \sqrt{n} \ln\left(1 + \frac{1}{n}\right)
+            </me>
+          </p>
+        </statement>
+
+        </exercise>
+
+      <exercise xml:id="ex-Rogawski-11-01-83">
+        <statement>
+          <p>
+            Show that the sequence
+            <me>
+              \sqrt{3}, \sqrt{3\sqrt{3}}, \sqrt{3\sqrt{3\sqrt{3}}}, \sqrt{3\sqrt{3\sqrt{3\sqrt{3}}}}, \ldots
+            </me>
+            is increasing and bounded above by 3.
+            Find the limit of the sequence.
+          </p>
+        </statement>
+
+        </exercise>
+
+      <exercise xml:id="ex-2026-01-25-test-for-divergence">
+        <task>
+          <statement>
+            <p>
+              Determine whether the <alert>sequence</alert> <m>a_n = \frac{3n^2+1}{n^2-2}</m> converges or diverges.
+              If it converges, find its limit.
+            </p>
+          </statement>
+
+          </task>
+
+
+        <task>
+          <statement>
+            <p>
+              Determine whether the <alert>series</alert> <m>\sum_{n=0}^\infty \frac{3n^2+1}{n^2-2}</m> converges or diverges.
+              If it converges, find its limit.
+            </p>
+          </statement>
+
+          </task>
+      </exercise>
+
+      <exercise xml:id="ex-Rogawksi-11-02-13">
+        <introduction>
+          <p>
+            Consider the series <m>\sum_{n=1}^\infty \frac{1}{4n^2-1}</m>.
+          </p>
+        </introduction>
+
+
+        <task>
+          <statement>
+            <p>
+              Evaluate the first five partial sums of the series.
+            </p>
+          </statement>
+
+          </task>
+
+
+        <task>
+          <statement>
+            <p>
+              Evaluate the sum of the series.
+            </p>
+          </statement>
+
+          </task>
+      </exercise>
+
+      <exercise xml:id="ex-Rogawski-11-03-45">
+        <statement>
+          <figure>
+            <image>
+              <ns1:prefigure label="prefig-ex-Rogawski-11-03-45">
+              <ns1:diagram dimensions="(300,300)" margins="5">
+              <ns1:definition>
+NyuViolet="#57068c"
+              </ns1:definition>
+
+              <ns1:definition>
+UltraViolet="#8900e1"
+              </ns1:definition>
+
+              <ns1:definition>
+MediumViolet1="#702b9d"
+              </ns1:definition>
+
+              <ns1:definition>
+MediumViolet2="#7b5aa6"
+              </ns1:definition>
+
+              <ns1:definition>
+LightViolet1="#ab82c5"
+              </ns1:definition>
+
+              <ns1:definition>
+LightViolet2="#eee6f3"
+              </ns1:definition>
+
+              <ns1:definition>
+a=0.5
+              </ns1:definition>
+
+              <ns1:definition>
+b=0
+              </ns1:definition>
+              <ns1:coordinates bbox="(-0.2,-0.2,1.2,1.2)">
+              <ns1:polygon points="((0,0),(1,0),(1,1))" closed="yes" stroke="NyuViolet" />
+              <ns1:repeat parameter="k=1..8">
+              <ns1:polygon points="((b,b),(1,b),(a,a))" closed="no" stroke="UltraViolet" />
+              <ns1:definition>
+b=a
+              </ns1:definition>
+
+              <ns1:definition>
+a=(1+a)/2
+              </ns1:definition>
+              </ns1:repeat>
+              <ns1:label anchor="(0.5,0)" alignment="s" color="#8900e1">
+              <ns1:m>1</ns1:m>
+              </ns1:label>
+              <ns1:angle-marker points="((1,0),(0,0),(1,1))" thickness="1">
+              <ns1:m>\pi/4</ns1:m>
+              </ns1:angle-marker>
+              <ns1:angle-marker points="((0.5,0.5),(1,0),(0,0))" thickness="1">
+              <ns1:m>\pi/4</ns1:m>
+              </ns1:angle-marker>
+              </ns1:coordinates>
+              </ns1:diagram>
+              </ns1:prefigure>
+            </image>
+          </figure>
+
+          <p>
+            Use a geometric series to find the total length of the infinite zigzag path shown in the figure (each zag occurs at an angle of <m> \frac{\pi}{4}</m>).
+          </p>
+        </statement>
+
+        </exercise>
+      </exercises>
+    </section>
+  </article>
+</pretext>

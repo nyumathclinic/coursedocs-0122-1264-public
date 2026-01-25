@@ -1,0 +1,294 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<pretext xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns1="http://purl.org/dc/terms/">
+  <exercise xml:id="umich_2024-02-12_0116_4">
+    <provenance> <dc:creator>Matthew Leingang</dc:creator> <ns1:created>2025-08-18</ns1:created> <dc:source>https://dhsp.math.lsa.umich.edu/exams/116exam1/w24/p4.pdf</dc:source> <dc:rights>This source is used under a Creative Commons License (CC-BY-NC-SA-4.0).</dc:rights> </provenance>
+    <introduction>
+      <p>
+        Avery is measuring the volume of water in their backyard on the day of a rainstorm.
+        <ol>
+          <li>
+            <p>
+              Let <m>T(h)</m> be the total amount of rainwater in Avery's backyard, in cubic feet, <m>h</m> hours after 12:00 a.m.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Let <m>A(h)</m> be the rate at which the rain adds water to Avery's backyard, in cubic feet per hour, <m>h</m> hours after 12:00 a.m.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Let <m>M(h)</m> be the rate at which water drains or evaporates from Avery's backyard, in cubic feet per hour, <m>h</m> hours after 12:00 a.m.
+            </p>
+          </li>
+        </ol>
+        The functions <m>T(h)</m>, <m>A(h)</m>, and <m>M(h)</m> are all differentiable functions.
+        Assume there is no water in Avery's backyard at 12:00 a.m.
+      </p>
+    </introduction>
+
+
+    <task>
+      <statement>
+        <p>
+          Write a sentence in English which explains the equality
+          <me>
+            \int_4^{10} M(h)\,dh = 8000
+          </me>
+          .
+        </p>
+      </statement>
+
+      </task>
+
+
+    <task>
+      <statement>
+        <p>
+          Write an integral expression which gives the total amount of rainwater in cubic feet, in Avery's backyard at 7:00 a.m.
+        </p>
+      </statement>
+
+      </task>
+
+
+    <task>
+      <statement>
+        <p>
+          Write an expression which gives the average amount of rainwater, in cubic feet, in Avery's backyard between 6:00 a.m.
+          and 9:00 a.m.
+        </p>
+      </statement>
+
+      </task>
+  </exercise>
+
+  <exercise xml:id="exercise-area-approximation">
+    <introduction>
+      <p>
+        Estimate the area under the curve <m>f(x) = \frac{1}{x}</m> from <m>x=1</m> to <m> x=5</m> using four rectangles.
+      </p>
+    </introduction>
+
+
+    <task>
+      <statement>
+        <p>
+          Use <em>right endpoints</em>.
+          Sketch the graph and the rectangles.
+        </p>
+      </statement>
+
+      </task>
+
+
+    <task>
+      <statement>
+        <p>
+          Repeat the estimation using <em>left endpoints</em>.
+        </p>
+      </statement>
+
+      </task>
+
+
+    <task>
+      <statement>
+        <p>
+          Explain why one estimate is an overestimate and the other is an underestimate.
+        </p>
+      </statement>
+
+      </task>
+  </exercise>
+
+  <exercise xml:id="p-2">
+    <statement>
+      <p>
+        Let <m>g(x) = \int_0^{x^2} \sin(t^3) \, dt</m>.
+        Find the exact value of <m> g'(x)</m> .
+      </p>
+    </statement>
+
+    </exercise>
+
+  <exercise xml:id="p-4">
+    <introduction>
+      <p>
+        A particle's velocity is given by <m>v(t) = 3t^2 - 12t + 9</m> (in meters/second) for <m>0 \le t \le 4</m>.
+      </p>
+    </introduction>
+
+
+    <task>
+      <statement>
+        <p>
+          Find the displacement of the particle over the interval.
+        </p>
+      </statement>
+
+      </task>
+
+
+    <task>
+      <statement>
+        <p>
+          Find the total distance traveled by the particle over the interval.
+        </p>
+      </statement>
+
+      </task>
+  </exercise>
+
+  <exercise xml:id="p-3">
+    <statement>
+      <p>
+        Evaluate the definite integral <m>\int_{e}^{e^4} \frac{\sqrt{\ln x}}{x} \, dx</m> using an appropriate substitution.
+        You must show the change in the limits of integration.
+      </p>
+    </statement>
+
+    </exercise>
+
+  <exercise xml:id="ps02-01">
+    <statement>
+      <p> Evaluate the indefinite integral <m>\int x^2 e^{2x} \, dx</m>. You must
+          show all steps of the integration by parts process. </p>
+    </statement>
+
+    </exercise>
+
+  <exercise xml:id="ps02-02">
+    <statement>
+      <p> Evaluate the definite integral <m>\int_1^e \ln(x^4) \, dx</m>. </p>
+    </statement>
+
+    </exercise>
+
+  <exercise xml:id="ps02-03">
+    <statement>
+      <p> A particle moves along a straight line with velocity <m>v(t) = t
+          \sin(2t)</m> meters per second. Find the displacement of the particle
+          over the interval <m>[0, \frac{\pi}{2}]</m>. </p>
+    </statement>
+
+    </exercise>
+
+  <exercise xml:id="ps02-04">
+    <statement>
+      <p> Evaluate the integral <me>
+              \int \sin^4 x \cos^2 x \,dx
+          </me>
+          .
+    </p>
+    </statement>
+
+    </exercise>
+
+  <exercise xml:id="ps02-05">
+    <statement>
+      <p> Evaluate the indefinite integral <m>\int \tan^3(x) \sec(x) \, dx</m>. </p>
+    </statement>
+
+    </exercise>
+
+  <exercise xml:id="ps02-06">
+    <introduction>
+      <p> Evaluate the indefinite integral <me>
+              \int x \sec^3(x^2) \,dx
+          </me>
+          .
+    </p>
+    </introduction>
+
+
+    <task>
+      <statement>
+        <p>
+            First, make a substitution to simplify the integral.
+        </p>
+      </statement>
+
+      </task>
+
+
+    <task>
+      <statement>
+        <p>
+            Evaluate the simplified integral.
+        </p>
+      </statement>
+
+      </task>
+  </exercise>
+
+  <exercise xml:id="p-5">
+    <introduction>
+      <p>
+        Consider the piecewise-defined function
+        <me>
+          f(x) = \begin{cases}
+            x + 1 \amp \text{if } 0 \le x \le 3 \\
+            \sqrt{9 - (x-3)^2} + 1 \amp \text{if } 3 \le x \le 6
+          \end{cases}
+        </me>
+        The first piece is a line segment, and the second piece is a quarter-circle of radius 3 centered at <m>(3, 1)</m>.
+      </p>
+    </introduction>
+
+    <task>
+      <statement>
+        <p>
+          Verify that <m>f</m> is continuous at <m>x = 3</m>.
+        </p>
+      </statement>
+
+      </task>
+
+    <task>
+      <statement>
+        <p>
+          Using geometry (not antiderivatives), evaluate the definite integral <m>\int_0^6 f(x) \, dx</m>.
+        </p>
+      </statement>
+
+      </task>
+  </exercise>
+
+  <exercise xml:id="ps02-07">
+    <statement>
+      <p>Evaluate the indefinite integral <m>\int x^2 e^{x^3} \, dx</m> using integration by substitution.</p>
+    </statement>
+
+    </exercise>
+
+  <exercise xml:id="ps02-08">
+    <statement>
+      <p>Find the area under the curve <m>y = \frac{x}{\sqrt{x^2+9}}</m> between <m>x=0</m> and <m>x=4</m>.</p>
+    </statement>
+
+    </exercise>
+
+  <exercise xml:id="ps02-09">
+    <statement>
+      <p>Evaluate the indefinite integral <m>\int \frac{x}{x^2+1} \, dx</m>.</p>
+    </statement>
+
+    </exercise>
+
+  <exercise xml:id="ps02-10">
+    <statement>
+      <p>Evaluate the definite integral <m>\int_0^2 x\sqrt{4-x^2} \, dx</m>.</p>
+    </statement>
+
+    </exercise>
+
+  <exercise xml:id="ps02-11">
+    <statement>
+      <p>Evaluate the indefinite integral <m>\int \frac{x^3}{\sqrt{x^2+1}} \, dx</m>.</p>
+    </statement>
+
+    </exercise>
+</pretext>

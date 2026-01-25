@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<pretext xmlns:ns0="http://www.w3.org/2001/XInclude">
+  <ns0:include href="../docinfo.ptx" />
+  <article>
+    <section xml:id="ps11-section">
+      <title>Problem Set 11</title>
+      <subtitle>Alternating Series and the Ratio Test</subtitle>
+      <ns0:include href="ps01-tr.ptx" xpointer="xpointer(//section[1]/introduction)" />
+      <exercises>
+        <exercise xml:id="ex-alternating-series-test">
+          <statement>
+            <p> Determine whether the series <m>\sum_{n=1}^\infty \frac{(-1)^{n-1}}{\arctan(n)}</m>
+              converges or diverges. </p>
+          </statement>
+          </exercise>
+
+        <exercise xml:id="ex-absolute-convergence">
+          <statement>
+            <p> Determine whether the series <m>\sum_{n=1}^\infty \frac{\cos(n^2)}{n 2^n}</m> is
+              absolutely convergent, conditionally convergent, or divergent. </p>
+          </statement>
+          </exercise>
+
+        <exercise xml:id="ex-alternating-series-remainder-estimate">
+          <statement>
+            <p> Find a value of <m>N</m> such that <m>s_N</m> approximates the series <m>\sum_{n=1}^\infty
+              \frac{(-1)^{n+1} \ln n}{n!}</m> with an error less than <m>10^{-5}</m>. </p>
+          </statement>
+          </exercise>
+
+        <exercise xml:id="ex-root-test">
+          <statement>
+            <p> Use the Root Test to determine if the series <m>\sum_{n=1}^\infty
+              \left(\frac{3n+1}{2n+5}\right)^n</m> converges or diverges. </p>
+          </statement>
+          </exercise>
+
+        <exercise xml:id="ex-mpl-2025-11-01-powerseries">
+          <statement>
+            <p> For each real number <m>x</m>, determine if the series <m>\sum_{n=1}^\infty
+              \frac{x^n}{n3^n}</m> converges absolutely, converges conditionally, or diverges. </p>
+          </statement>
+          </exercise>
+
+        <exercise xml:id="ex-Rogawski-11-06-27">
+          <statement>
+            <p> Show that <m>\sum_{n=1}^\infty \frac{n!}{n^n}</m> converges. </p>
+          </statement>
+        <hint>
+          <p>
+            <me>
+              \lim_{n\to\infty} \left(1 + \frac{1}{n}\right)^n = e
+            </me>
+          </p>
+        </hint>
+        </exercise>
+        
+      </exercises>
+    </section>
+  </article>
+</pretext>

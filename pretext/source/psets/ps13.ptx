@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<pretext xmlns:ns0="http://www.w3.org/2001/XInclude">
+  <ns0:include href="../docinfo.ptx" />
+  <article>
+    <section xml:id="ps13-section">
+      <title>Problem Set 13</title>
+      <subtitle>Power Series</subtitle>
+      <ns0:include href="ps01-tr.ptx" xpointer="xpointer(//section[1]/introduction)" />
+      <exercises>
+        <exercise xml:id="mpl-2025-11-15-derivs-of-arctan">
+          <statement>
+            <p> Let <m>f(x) = \tan^{-1}(3x)</m>. Use a Taylor series to find <m>f^{(2025)}(0)</m>. </p>
+          </statement>
+          </exercise>
+
+        <exercise xml:id="Rogawski-11-7-83">
+          <statement>
+            <p>
+              Use Taylor series to evaluate
+              <me> \lim_{x\to 0} \left(\frac{\sin x^2}{x^4} - \frac{\cos{x}}{x^2}\right)</me>. 
+              Compare this to the same limit evaluated using L'Hôpital's Rule.
+            </p>
+          </statement>
+          </exercise>
+      </exercises>
+    </section>
+  </article>
+</pretext>

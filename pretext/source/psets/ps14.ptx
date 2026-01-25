@@ -1,0 +1,156 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<pretext xmlns:ns0="http://www.w3.org/2001/XInclude" xmlns:ns1="https://prefigure.org">
+  <ns0:include href="../docinfo.ptx" />
+  <article>
+    <section xml:id="ps14-section">
+      <title>Problem Set 14</title>
+      <subtitle>Parametric Curves</subtitle>
+      <ns0:include href="ps01-mw.ptx" xpointer="xpointer(//section[1]/introduction)" />
+
+
+      <exercises>
+        <exercise xml:id="ex-Rogawski-12-01-19">
+          <statement>
+            <p> Match the parametrizations with their plots. Explain your answers, and indicate the
+              direction of motion along each curve as <m>t</m> increases. <ol>
+                <li>
+                  <p>
+                    <m>x=\sin t</m>, <m>y=-t</m>
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <m>x=t^2-9</m>, <m>y=8t-t^3</m>
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <m>x=1-t</m>, <m>y=t^2-9</m>
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <m>x=4t+2</m>, <m>y=5-3t</m>
+                  </p>
+                </li>
+              </ol>
+              <figure xml:id="ex-Rogawski-12-01-19-fig">
+                <caption>Four parametric curves</caption>
+                <sbsgroup widths="45% 45%">
+                  <sidebyside widths="45% 45%">
+                    <figure xml:id="ex-Rogawski-12-01-19-fig-a">
+                      <caption>Curve A</caption>
+                      <image>
+                        <ns1:prefigure label="ex-Rogawski-12-01-19-prefig-a">
+                          <ns1:diagram dimensions="(300,300)" margins="5">
+                            <ns1:definition>NyuViolet="#57068c"</ns1:definition>
+                            <ns1:definition>UltraViolet="#8900e1"</ns1:definition>
+                            <ns1:definition>MediumViolet1="#702b9d"</ns1:definition>
+                            <ns1:definition>MediumViolet2="#7b5aa6"</ns1:definition>
+                            <ns1:definition>LightViolet1="#ab82c5"</ns1:definition>
+                            <ns1:definition>LightViolet2="#eee6f3"</ns1:definition>
+                            <ns1:definition>f(t) = 4*t+2</ns1:definition>
+                            <ns1:definition>g(t) = 5-3*t</ns1:definition>
+                            <ns1:definition>c(t) = (f(t),g(t))</ns1:definition>
+                            <ns1:coordinates bbox="(-1,-1,10,10)">
+                              <ns1:axes xlabel="x" ylabel="y" />
+                              <ns1:parametric-curve function="c" domain="(-5,5)" />
+                            </ns1:coordinates>
+                          </ns1:diagram>
+                        </ns1:prefigure>
+                      </image>
+                    </figure>
+                    <figure xml:id="ex-Rogawski-12-01-19-fig-b">
+                      <caption>Curve B</caption>
+                      <image>
+                        <ns1:prefigure label="ex-Rogawski-12-01-19-prefig-b">
+                          <ns1:diagram dimensions="(300,300)" margins="5">
+                            <ns1:definition>NyuViolet="#57068c"</ns1:definition>
+                            <ns1:definition>UltraViolet="#8900e1"</ns1:definition>
+                            <ns1:definition>MediumViolet1="#702b9d"</ns1:definition>
+                            <ns1:definition>MediumViolet2="#7b5aa6"</ns1:definition>
+                            <ns1:definition>LightViolet1="#ab82c5"</ns1:definition>
+                            <ns1:definition>LightViolet2="#eee6f3"</ns1:definition>
+                            <ns1:definition>f(t) = t^2-9</ns1:definition>
+                            <ns1:definition>g(t) = 8*t-t^3</ns1:definition>
+                            <ns1:definition>c(t) = (f(t),g(t))</ns1:definition>
+                            <ns1:coordinates bbox="(-10,-20,10,20)">
+                              <ns1:axes xlabel="x" ylabel="y" />
+                              <ns1:parametric-curve function="c" domain="(-5,5)" />
+                            </ns1:coordinates>
+                          </ns1:diagram>
+                        </ns1:prefigure>
+                      </image>
+                    </figure>
+                  </sidebyside>
+                  <sidebyside widths="45% 45%">
+                    <figure xml:id="ex-Rogawski-12-01-19-fig-c">
+                      <caption>Curve C</caption>
+                      <image>
+                        <ns1:prefigure label="ex-Rogawski-12-01-19-prefig-c">
+                          <ns1:diagram dimensions="(300,300)" margins="5">
+                            <ns1:definition>NyuViolet="#57068c"</ns1:definition>
+                            <ns1:definition>UltraViolet="#8900e1"</ns1:definition>
+                            <ns1:definition>MediumViolet1="#702b9d"</ns1:definition>
+                            <ns1:definition>MediumViolet2="#7b5aa6"</ns1:definition>
+                            <ns1:definition>LightViolet1="#ab82c5"</ns1:definition>
+                            <ns1:definition>LightViolet2="#eee6f3"</ns1:definition>
+                            <ns1:definition>f(t) = 1-t</ns1:definition>
+                            <ns1:definition>g(t) = t^2-9</ns1:definition>
+                            <ns1:definition>c(t) = (f(t),g(t))</ns1:definition>
+                            <ns1:coordinates bbox="(-10,-20,10,20)">
+                              <ns1:axes xlabel="x" ylabel="y" />
+                              <ns1:parametric-curve function="c" domain="(-5,5)" />
+                            </ns1:coordinates>
+                          </ns1:diagram>
+                        </ns1:prefigure>
+                      </image>
+                    </figure>
+                    <figure xml:id="ex-Rogawski-12-01-19-fig-d">
+                      <caption>Curve D</caption>
+                      <image>
+                        <ns1:prefigure label="ex-Rogawski-12-01-19-prefig-d">
+                          <ns1:diagram dimensions="(300,300)" margins="5">
+                            <ns1:definition>NyuViolet="#57068c"</ns1:definition>
+                            <ns1:definition>UltraViolet="#8900e1"</ns1:definition>
+                            <ns1:definition>MediumViolet1="#702b9d"</ns1:definition>
+                            <ns1:definition>MediumViolet2="#7b5aa6"</ns1:definition>
+                            <ns1:definition>LightViolet1="#ab82c5"</ns1:definition>
+                            <ns1:definition>LightViolet2="#eee6f3"</ns1:definition>
+                            <ns1:definition>f(t) = sin(t)</ns1:definition>
+                            <ns1:definition>g(t) = -t</ns1:definition>
+                            <ns1:definition>c(t) = (f(t),g(t))</ns1:definition>
+                            <ns1:coordinates bbox="(-1.5,-6.5,1.5,6.5)">
+                              <ns1:axes xlabel="x" ylabel="y" v-pi-format="yes" />
+                              <ns1:parametric-curve function="c" domain="(-2*pi,2*pi)" />
+                            </ns1:coordinates>
+                          </ns1:diagram>
+                        </ns1:prefigure>
+                      </image>
+                    </figure>
+                  </sidebyside>
+                </sbsgroup>
+              </figure>
+            </p>
+          </statement>
+          </exercise>
+        <exercise xml:id="ex-parametric-derivatives">
+          <statement>
+            <p> A curve is defined by the parametric equations <m>x(t) = t^2+1</m> and <m>y(t)=t^3-1</m>.
+              Find <m>\frac{dy}{dx}</m> and <m>\frac{d^2y}{dx^2}</m>, in terms of <m>t</m>, and also
+              at the point <m>(2,0)</m>. </p>
+          </statement>
+          </exercise>
+
+        <exercise xml:id="ex-parametric-arc-length">
+          <statement>
+            <p> Find the length of the curve given by the parametric equations <m>x=t^3</m> and <m>
+              y=t^2</m> for <m>0 \le t \le 1</m>. </p>
+          </statement>
+          </exercise>
+
+
+      </exercises>
+    </section>
+  </article>
+</pretext>

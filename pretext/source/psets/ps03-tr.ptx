@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<pretext xmlns:ns0="http://www.w3.org/2001/XInclude">
+  <article>
+    <section xml:id="ps03-section">
+      <title>Problem Set 3 (TR Sections)</title>
+
+      <subtitle>Trigonometric Integrals and Substitution</subtitle>
+      
+      <ns0:include href="ps01-tr.ptx" xpointer="xpointer(//section[1]/introduction)" set-xml-id="intro-ps03" />
+      <exercises>
+      <ns0:include href="problems.ptx" xpointer="xpointer(//exercise[@xml:id='ps02-04'])" />
+      <ns0:include href="problems.ptx" xpointer="xpointer(//exercise[@xml:id='ps02-05'])" />
+      <ns0:include href="problems.ptx" xpointer="xpointer(//exercise[@xml:id='ps02-06'])" />
+      <exercise xml:id="ex-trig-sub-definite-x-squared-plus-four">
+        <statement>
+          <p>
+            Evaluate the definite integral
+            <me>
+              \int_1^3 \frac{dx}{x^2\sqrt{x^2+4}}
+            </me>.
+            Explain your steps and justify your choices for trigonometric substitution.
+          </p>
+        </statement>
+
+        </exercise>
+
+      <exercise xml:id="ex-trig-sub-completing-the-square">
+        <statement>
+          <p>
+            Evaluate the indefinite integral
+            <me>
+              \int \frac{x^2}{\sqrt{4x-x^2}} \,dx
+            </me>.
+          </p>
+        </statement>
+
+        </exercise>
+
+      <exercise xml:id="ex-trig-sub-one-over-x-sqrt">
+        <statement>
+          <p>
+            Evaluate the indefinite integral
+            <me>
+              \int \frac{1}{x\sqrt{4-x^2}} \,dx
+            </me>.
+          </p>
+        </statement>
+
+        </exercise>
+      </exercises>
+    </section>
+  </article>
+</pretext>

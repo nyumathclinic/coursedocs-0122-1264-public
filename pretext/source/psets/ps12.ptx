@@ -1,0 +1,86 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<pretext xmlns:ns0="http://www.w3.org/2001/XInclude">
+  <ns0:include href="../docinfo.ptx" />
+  <article>
+    <section xml:id="ps12-section">
+      <title>Problem Set 12</title>
+      <subtitle>Power Series</subtitle>
+      <ns0:include href="ps01-tr.ptx" xpointer="xpointer(//section[1]/introduction)" />
+      <exercises>
+        <exercise xml:id="ex-power-series-convergence-revised">
+          <statement>
+            <p> Find the radius of convergence and interval of convergence for the series <me>\sum_{n=2}^\infty
+              \frac{(-1)^n (x-2)^n}{3^n \ln(n^2)}</me>. </p>
+          </statement>
+          </exercise>
+
+        <exercise xml:id="mpl-2025-11-1-hypergeometric">
+          <task xml:id="mpl-2025-11-1-hypergeometric-derivatives">
+            <statement>
+              <p> Find power series representations for <m>\frac{1}{(1-x)^2}</m> and <m>
+                \frac{1}{(1-x)^3}</m> centered at <m>0</m>, along with their radii of convergence. </p>
+            </statement>
+            </task>
+          <task xml:id="mpl-2025-11-1-hypergeometric-algebra">
+            <statement>
+              <p> Use your answers to part <xref ref="mpl-2025-11-1-hypergeometric-derivatives" text="local" /> to find a closed-form rational expression in terms of <m>x</m> for
+                the power series <m>\sum_{n=0}^\infty
+                  n^2 x^n</m>. </p>
+            </statement>
+            </task>
+          <task xml:id="mpl-2025-11-1-hypergeometric-c">
+            <statement>
+              <p> Use your answer to part <xref ref="mpl-2025-11-1-hypergeometric-algebra" text="local" /> to find the exact value of <m>\sum_{n=0}^\infty \frac{n^2}{2^n}</m>
+              </p>
+            </statement>
+            </task>
+        </exercise>
+
+        <exercise xml:id="mpl-2025-11-15-pi">
+          <task xml:id="mpl-2025-11-15-pi-trigident">
+            <statement>
+              <p> Use the addition formula for tangent: <me>
+                  \tan(x+y) = \frac{\tan x + \tan y}{1 - \tan x \tan y}
+                </me>
+                to prove that <me>
+                  \tan^{-1}\left(\frac{1}{2}\right) + \tan^{-1}\left(\frac{1}{3}\right) =
+                \frac{\pi}{4}
+                </me>
+              </p>
+              <aside>
+                <p> This is sometimes called <alert>Euler's Machin-like formula</alert>, and can be
+                  written in a pleasant form as: <me>
+                    \cot^{-1}(1) = \cot^{-1}(2) + \cot^{-1}(3)
+                  </me>
+                </p>
+              </aside>
+            </statement>
+
+            </task>
+          <task xml:id="mpl-2025-11-15-pi-powerseries">
+            <statement>
+              <p> Use part <xref ref="mpl-2025-11-15-pi-trigident" text="local" /> and the power
+                series for <m>\tan^{-1}(x)</m> derived in the text to find an infinite series
+                converging to <m>\pi</m>. </p>
+            </statement>
+            </task>
+          <task>
+            <statement>
+              <p> Evaluate the sum of the first three non-zero terms of the series found in part <xref ref="mpl-2025-11-15-pi-powerseries" text="local" /> to obtain an approximation for <m>
+                \pi</m>. Use the remainder estimate for alternating series to find an upper bound
+                for the error in this approximation. </p>
+              <aside>
+                <p> A related formula, known as <alert>Machin's formula</alert>, expresses <m>\pi</m>
+                  in terms of arctangents of smaller rational numbers: <me>
+                    \frac{\pi}{4} = 4 \tan^{-1}\left(\frac{1}{5}\right) -
+                  \tan^{-1}\left(\frac{1}{239}\right)
+                  </me>.d
+                  It converges more quickly than the formula derived in this problem. </p>
+              </aside>
+            </statement>
+            </task>
+        </exercise>
+      </exercises>
+    </section>
+  </article>
+</pretext>

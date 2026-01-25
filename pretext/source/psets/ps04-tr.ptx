@@ -1,0 +1,92 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<pretext xmlns:ns0="http://www.w3.org/2001/XInclude">
+  <ns0:include href="../docinfo.ptx" />
+  <article>
+    <section xml:id="ps04-section">
+      <title>Problem Set 4 (TR Sections)</title>
+      <subtitle>Partial Fractions and Approximate Integration</subtitle>
+      <ns0:include href="ps01-tr.ptx" xpointer="xpointer(//section[1]/introduction)" />
+      <exercises>
+
+        <exercise xml:id="ex-partial-fractions-long-division">
+          <statement>
+            <p>
+              Evaluate the indefinite integral
+              <me>
+                \int \frac{x^3-4x-10}{x^2-x-6} \,dx
+              </me>.
+            </p>
+          </statement>
+
+          </exercise>
+
+        <exercise xml:id="ex-partial-fractions-repeated-quadratic">
+          <statement>
+            <p>
+              Evaluate the definite integral
+              <me>
+                \int_{0}^{1/\sqrt{3}} \frac{x}{(x-1)^2(x^2+1)} \,dx
+              </me>.
+            </p>
+          </statement>
+
+          </exercise>
+
+        <exercise xml:id="ex-partial-fractions-u-sub">
+          <statement>
+            <p>
+              Evaluate the indefinite integral
+              <me>
+                \int \frac{1}{e^{2x}-e^x-2} \,dx
+              </me>.
+            </p>
+          </statement>
+
+          </exercise>
+
+
+        <exercise xml:id="ex-simpsons-rule-revised">
+          <statement>
+            <p> Use Simpson's Rule with <m>n=4</m> to approximate the definite integral <m>\int_0^4
+              \frac{1}{1+x^2} \,dx</m>. </p>
+          </statement>
+          </exercise>
+
+        <exercise xml:id="ex-trapezoidal-rule">
+          <statement>
+            <p> Use the Trapezoidal Rule with <m>n=4</m> to approximate the definite integral <m>\int_0^2
+              \sqrt{1+x^3} \,dx</m>. </p>
+          </statement>
+          </exercise>
+
+        <exercise xml:id="ex-erf-approximation">
+          <introduction>
+            <p> Let <me>f(x) =
+                \frac{1}{\sqrt{2\pi}}e^{-x^2/2}</me>. The function <m>f</m> is the probability
+              density function of a normally distributed random variable with mean <m>0</m> and
+              standard deviation <m>
+                1</m>. The function <me>E = \int_0^x f(t)\,dt</me> can be used
+              to compute probability that the variable lies within any given interval. Remember that <m>
+              f(x)</m> is not integrable in elementary terms. </p>
+          </introduction>
+          <task>
+            <statement>
+              <p> Use your favorite graphing technology (e.g., Desmos, Geogebra, Wolfram Alpha) to
+                find an upper bound for the absolute value of <me>
+                  f^{(4)}(x) = \frac{1}{\sqrt{2\pi}}e^{-x^2/2}(x^4 - 6x^2 + 3)
+                </me>
+                on <m>[0,1]</m>. Include a graph in your submission. </p>
+            </statement>
+            </task>
+          <task>
+            <statement>
+              <p> find the number of subdivisions <m>n</m> needed to guarantee that <m>S_n</m> for <m>
+                E(1)</m> is within <m>
+                  \frac{1}{1000}</m> of the exact value. </p>
+            </statement>
+            </task>
+        </exercise>
+      </exercises>
+    </section>
+  </article>
+</pretext>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<pretext xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <article>
+    <title></title>
+
+    <section xml:id="sec-ps01">
+      <title>Problem Set 1 (TR Sections)</title>
+      <subtitle>Riemann Sums and the Fundamental Theorem of Calculus</subtitle>
+
+      <introduction>
+        <p>
+          This problem set consists not only of problems similar to what you've seen, but also of unique problems you may not have seen before.
+          The purpose is for you to apply the concepts you've previously learned to new, unfamiliar, and usually more interesting situations.
+          In some cases, problems connect ideas from multiple learning objectives.
+        </p>
+
+        <p>
+          Write full, clear solutions to the problems below.
+          Although the final answer is important, being able to convey you understand the underlying concepts is more important.
+          So show your work and explain your steps.
+          Write complete sentences in English to connect your mathematical statements.
+          Do not use the three-dots notation (∴ or ∵) when you mean <q> therefore</q> or <q>because</q>.
+          Do not use an arrow (→) when you mean equals (=) or <q>this implies</q> or <q>and now the next step is…</q>.
+          Use the worked examples in the textbook, or on solution sets to worksheets or previous problem sets, as a guide for how to write your solutions.
+        </p>
+
+        <p>
+          Written work should be neat and legible.
+          Other than being written in longhand, your work should be as clean as something you would turn in for one of your writing classes.
+          Write in linear order from left to right and top to bottom.
+          Leave ample space for graders to write their comments.
+          (Do not upload the exercise sheet with your answers written in the margins.) Setting aside one page per exercise is a good rule of thumb.
+        </p>
+
+        <p>
+          Prepare a single PDF and submit it to Gradescope.
+          Mark the page of each exercise when you upload your pset.
+          Make sure each page is in the proper orientation.
+        </p>
+      </introduction>
+
+      <exercises xml:id="exs-ps01-tr">
+        <xi:include href="problems.ptx" xpointer="xpointer(//exercise[@xml:id='umich_2024-02-12_0116_4'])" />
+        <xi:include href="problems.ptx" xpointer="xpointer(//exercise[@xml:id='exercise-area-approximation'])" />
+        <xi:include href="problems.ptx" xpointer="xpointer(//exercise[@xml:id='p-5'])" />
+        <xi:include href="problems.ptx" xpointer="xpointer(//exercise[@xml:id='p-2'])" />
+        <xi:include href="problems.ptx" xpointer="xpointer(//exercise[@xml:id='p-4'])" />
+      </exercises>
+    </section>
+  </article>
+</pretext>
