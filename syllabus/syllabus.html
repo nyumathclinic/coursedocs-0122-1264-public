@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US" dir="ltr">
+<!--******************************************-->
+<!--*  Authored with PreTeXt                 *-->
+<!--*  pretextbook.org                       *-->
+<!--*  Theme: boulder                        *-->
+<!--*  Palette:                              *-->
+<!--******************************************-->
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>MATH-UA 122 Calculus II</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+<link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
+<script>
+var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+window.MathJax = {
+  "tex": {
+    "inlineMath": [
+      [
+        "\\(",
+        "\\)"
+      ]
+    ],
+    "tags": "none",
+    "tagSide": "right",
+    "tagIndent": ".8em",
+    "packages": {
+      "[+]": [
+        "base",
+        "extpfeil",
+        "ams",
+        "amscd",
+        "color",
+        "newcommand",
+        "knowl"
+      ]
+    }
+  },
+  "options": {
+    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
+    "processHtmlClass": "process-math"
+  },
+  "chtml": {
+    "scale": 0.98,
+    "mtextInheritFont": true
+  },
+  "loader": {
+    "load": [
+      "input/asciimath",
+      "[tex]/extpfeil",
+      "[tex]/amscd",
+      "[tex]/color",
+      "[tex]/newcommand",
+      "[pretext]/mathjaxknowl3.js"
+    ],
+    "paths": {
+      "pretext": "_static/pretext/js/lib"
+    }
+  },
+  "startup": {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      rsMathReady();
+      }
+    )}
+  }
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="article">
+<script src="_static/pretext/js/lib/jquery.min.js"></script><script src="_static/pretext/js/lib/jquery.sticky.js"></script><script src="_static/pretext/js/lib/jquery.espy.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><script src="_static/pretext/js/user_preferences.js"></script><!--** eBookCongig is necessary to configure interactive       **-->
+<!--** Runestone components to run locally in reader's browser **-->
+<!--** No external communication:                              **-->
+<!--**     log level is 0, Runestone Services are disabled     **-->
+<script type="text/javascript">
+eBookConfig = {};
+eBookConfig.useRunestoneServices = false;
+eBookConfig.host = 'http://127.0.0.1:8000';
+eBookConfig.course = 'PTX_Course_Title_Here';
+eBookConfig.basecourse = 'PTX_Base_Course';
+eBookConfig.isLoggedIn = false;
+eBookConfig.email = '';
+eBookConfig.isInstructor = false;
+eBookConfig.logLevel = 0;
+eBookConfig.username = '';
+eBookConfig.readings = null;
+eBookConfig.activities = null;
+eBookConfig.downloadsEnabled = false;
+eBookConfig.allow_pairs = false;
+eBookConfig.enableScratchAC = false;
+eBookConfig.build_info = "";
+eBookConfig.python3 = null;
+eBookConfig.runestone_version = '7.11.11';
+eBookConfig.jobehost = '';
+eBookConfig.proxyuri_runs = '';
+eBookConfig.proxyuri_files = '';
+eBookConfig.enable_chatcodes =  false;
+</script>
+<!--*** Runestone Services ***-->
+<script src="_static/prefix-runtime.fc0e080e84d54281.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.e2abc79debce15fd.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.6ec5960970d8b364.css">
+<script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script>
+</head>
+<body class="pretext article ignore-math">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner"><div class="title-container">
+<h1 class="heading"><a href="syllabus.html"><span class="title">MATH-UA 122 Calculus II</span> <span class="subtitle">Departmental Syllabus, Spring 2026 term</span></a></h1>
+<p class="byline">Prof. Matthew Leingang, Coordinator</p>
+</div></div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
+<button class="toc-toggle button hidden" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><div class="searchbox">
+<div class="searchwidget"><button id="searchbutton" class="searchbutton button" type="button" title="Search book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
+<div id="searchresultsplaceholder" class="searchresultsplaceholder" style="display: none">
+<div class="search-results-controls">
+<input aria-label="Search term" id="ptxsearch" class="ptxsearch" type="text" name="terms" placeholder="Search term"><button title="Close search" id="closesearchresults" class="closesearchresults"><span class="material-symbols-outlined">close</span></button>
+</div>
+<h2 class="search-results-heading">Search Results: </h2>
+<div id="searchempty" class="searchempty"><span>No results.</span></div>
+<ol id="searchresults" class="searchresults"></ol>
+</div>
+</div>
+<span class="nav-other-controls"><button id="embed-button" class="embed-button button" title="Embed this page"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe86f;</span><span class="name">Embed</span></button><div class="embed-popup hidden" id="embed-popup">
+<p>Copy the code below to embed this page in your own website or LMS page.</p>
+<div class="embed-code-container">
+<textarea class="embed-code-textbox" id="embed-code-textbox" readonly aria-label="textbox"><iframe src="https://example.com/embed" width="100%" height="1000"></iframe></textarea><button class="copy-embed-button button" id="copy-embed-button" title="Copy embed code"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe14d;</span><span class="name">Copy</span></button>
+</div>
+</div>
+<button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><span class="previous-button button disabled"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></span><span class="up-button button disabled"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></span><span class="next-button button disabled"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></span></span>
+</div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\R}{\mathbb R}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div class="ptx-page">
+<div id="ptx-sidebar" class="ptx-sidebar hidden"><nav id="ptx-toc" class="ptx-toc depth0"><ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-frontmatter"><div class="toc-title-box"><a href="#frontmatter" class="internal"><span class="title">Front Matter</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="#sec-course-info" class="internal"><span class="title">Course Information</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="#sec-activities" class="internal"><span class="title">Learning Activities</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="#sec-materials" class="internal"><span class="title">Textbook and Other Required Materials</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="#sec-grading" class="internal"><span class="title">Grading</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="#sec-help" class="internal"><span class="title">Extra help and tutoring</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="#sec-inst-statements" class="internal"><span class="title">Policy statements</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="#subsec-accessibility" class="internal"><span class="title">Student Accessibility</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="#subsec-religion" class="internal"><span class="title">Religious Observations</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="#subsec-dei" class="internal"><span class="title">Diversity, Equity, and Inclusion</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="#subsec-academic-integrity" class="internal"><span class="title">Academic Integrity</span></a></div></li>
+</ul>
+</li>
+</ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="article" id="syllabus"><section class="frontmatter" id="frontmatter"><h2 class="heading">
+<span class="title">MATH-UA 122 Calculus II</span><span class="subtitle">Departmental Syllabus, Spring 2026 term</span>
+</h2>
+<div class="author">
+<div class="author-name">Prof. Matthew Leingang, Coordinator</div>
+<div class="author-info">Department of Mathematics<br>NYU Courant Institute School of Mathematics, Computing, and Data Science</div>
+</div>
+<div class="date">Last Updated: January 25, 2026</div>
+<div class="autopermalink" data-description="Front Matter"><a href="#frontmatter" title="Copy heading and permalink for Front Matter" aria-label="Copy heading and permalink for Front Matter">🔗</a></div></section><div class="para" id="syllabus-4">Calculus II is a coordinated course. This syllabus contains information shared across all lecture sections. Your professors will also provide a syllabus supplement that contains information specific to your lecture section.<div class="autopermalink" data-description="Paragraph"><a href="#syllabus-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<section class="section" id="sec-course-info"><h2 class="heading hide-type">
+<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Course Information</span>
+</h2>
+<div class="para logical" id="sec-course-info-2">
+<dl class="description-list">
+<dt id="sec-course-info-2-1-1">Course Description<div class="autopermalink" data-description="Item: Course Description"><a href="#sec-course-info-2-1-1" title="Copy heading and permalink for Item: Course Description" aria-label="Copy heading and permalink for Item: Course Description">🔗</a></div>
+</dt>
+<dd><div class="para" id="sec-course-info-2-1-1-2">Techniques of integration. Further applications. Plane analytic geometry. Polar coordinates and parametric equations. Infinite series, including power series.<div class="autopermalink" data-description="Paragraph"><a href="#sec-course-info-2-1-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></dd>
+<dt id="sec-course-info-2-1-2">Credits<div class="autopermalink" data-description="Item: Credits"><a href="#sec-course-info-2-1-2" title="Copy heading and permalink for Item: Credits" aria-label="Copy heading and permalink for Item: Credits">🔗</a></div>
+</dt>
+<dd><div class="para" id="sec-course-info-2-1-2-2">4<div class="autopermalink" data-description="Paragraph"><a href="#sec-course-info-2-1-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></dd>
+<dt id="sec-course-info-2-1-3">Prerequisites<div class="autopermalink" data-description="Item: Prerequisites"><a href="#sec-course-info-2-1-3" title="Copy heading and permalink for Item: Prerequisites" aria-label="Copy heading and permalink for Item: Prerequisites">🔗</a></div>
+</dt>
+<dd><div class="para" id="sec-course-info-2-1-3-2">MATH-UA 121 Calculus I, or exam credit, or placement test. Visit the <a class="external" href="https://math.nyu.edu/dynamic/courses/undergrad/math-ua-122/" target="_blank">departmental course page</a> for more detail.<div class="autopermalink" data-description="Paragraph"><a href="#sec-course-info-2-1-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></dd>
+<dt id="sec-course-info-2-1-4">Instructional modality<div class="autopermalink" data-description="Item: Instructional modality"><a href="#sec-course-info-2-1-4" title="Copy heading and permalink for Item: Instructional modality" aria-label="Copy heading and permalink for Item: Instructional modality">🔗</a></div>
+</dt>
+<dd><div class="para" id="sec-course-info-2-1-4-2">Section 021 meets online for lecture and in-person for exams. All other sections meet in-person.<div class="autopermalink" data-description="Paragraph"><a href="#sec-course-info-2-1-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></dd>
+</dl>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-course-info-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec-course-info-3">“The book of the universe is written in the language of mathematics.” Galileo wrote this four hundred years ago, even before Newton and Leibniz discovered calculus. The statement is as valid today as ever: We use functions in all the sciences, and calculus allows us to analyze the functions and draw scientific conclusions.<div class="autopermalink" data-description="Paragraph"><a href="#sec-course-info-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="sec-course-info-4">
+<div class="para">Calculus II is a second semester calculus course for students who have previously been introduced to the basic ideas of differential and integral calculus. Over the semester we will study three (related) topics, topics that form a central part of the language of modern science:</div>
+<ul class="disc" id="sec-course-info-4-1">
+<li id="sec-course-info-4-1-1">
+<div class="para" id="sec-course-info-4-1-1-1">applications and methods of integration,<div class="autopermalink" data-description="Paragraph"><a href="#sec-course-info-4-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-course-info-4-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-course-info-4-1-2">
+<div class="para" id="sec-course-info-4-1-2-1">infinite series and the representation of functions by power series, and<div class="autopermalink" data-description="Paragraph"><a href="#sec-course-info-4-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-course-info-4-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-course-info-4-1-3">
+<div class="para" id="sec-course-info-4-1-3-1">parametric curves in the plane.<div class="autopermalink" data-description="Paragraph"><a href="#sec-course-info-4-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-course-info-4-1-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-course-info-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec-course-info-5">The material we take up in this course has applications in physics, chemistry, biology, environmental science, astronomy, economics, statistics, and just about everything else. We want you to leave the course not only with computational ability, but with the ability to use these notions in their natural scientific contexts, and with an appreciation of their mathematical beauty and power.<div class="autopermalink" data-description="Paragraph"><a href="#sec-course-info-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<section class="paragraphs" id="sec-course-info-6"><h3 class="heading"><span class="title">Learning Outcomes.</span></h3>
+<div class="para logical" id="sec-course-info-6-2">
+<ol class="decimal" id="sec-course-info-6-2-1">
+<li id="sec-course-info-6-2-1-1">
+<div class="para" id="sec-course-info-6-2-1-1-1">Antidifferentiate elementary functions and evaluate definite integrals<div class="autopermalink" data-description="Paragraph"><a href="#sec-course-info-6-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 1"><a href="#sec-course-info-6-2-1-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="sec-course-info-6-2-1-2">
+<div class="para" id="sec-course-info-6-2-1-2-1">Analyze sequences and series<div class="autopermalink" data-description="Paragraph"><a href="#sec-course-info-6-2-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 2"><a href="#sec-course-info-6-2-1-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+<li id="sec-course-info-6-2-1-3">
+<div class="para" id="sec-course-info-6-2-1-3-1">Use calculus to analyze parametric and polar plane curves<div class="autopermalink" data-description="Paragraph"><a href="#sec-course-info-6-2-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 3"><a href="#sec-course-info-6-2-1-3" title="Copy heading and permalink for Item 3" aria-label="Copy heading and permalink for Item 3">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-course-info-6-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Paragraphs: Learning Outcomes"><a href="#sec-course-info-6" title="Copy heading and permalink for Paragraphs: Learning Outcomes" aria-label="Copy heading and permalink for Paragraphs: Learning Outcomes">🔗</a></div></section><section class="paragraphs" id="sec-course-info-7"><h3 class="heading"><span class="title">Meeting Pattern.</span></h3>
+<div class="para" id="sec-course-info-7-2">Lecture sections meet twice weekly for 75 minutes, led by a professor. Recitation sections meets once weekly for 75 minutes, led by a teaching assistant. The times and locations of your sections are visible on <a class="external" href="https://albert.nyu.edu/" target="_blank">Albert</a>.<div class="autopermalink" data-description="Paragraph"><a href="#sec-course-info-7-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Paragraphs: Meeting Pattern"><a href="#sec-course-info-7" title="Copy heading and permalink for Paragraphs: Meeting Pattern" aria-label="Copy heading and permalink for Paragraphs: Meeting Pattern">🔗</a></div></section><section class="paragraphs" id="sec-course-info-8"><h3 class="heading"><span class="title">How the Credit Hours are Met by the Course.</span></h3>
+<div class="para" id="sec-course-info-8-2">This class meets for 3 hours and 45 minutes each week and carries the expectation that students will work on course learning activities (e.g. reading, problem sets, papers, and studying) for about 7 hours and 30 minutes outside of classroom per week. The syllabus includes more information about meeting times and expectations for student work.<div class="autopermalink" data-description="Paragraph"><a href="#sec-course-info-8-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Paragraphs: How the Credit Hours are Met by the Course"><a href="#sec-course-info-8" title="Copy heading and permalink for Paragraphs: How the Credit Hours are Met by the Course" aria-label="Copy heading and permalink for Paragraphs: How the Credit Hours are Met by the Course">🔗</a></div></section><div class="autopermalink" data-description="Section: Course Information"><a href="#sec-course-info" title="Copy heading and permalink for Section: Course Information" aria-label="Copy heading and permalink for Section: Course Information">🔗</a></div></section><section class="section" id="sec-activities"><h2 class="heading hide-type">
+<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Learning Activities</span>
+</h2>
+<div class="para" id="sec-activities-2">Most weeks will follow the same pattern of engagement with the course material. It alternates between instruction and assessment, and is designed for you to have many opportunities to practice, ask for help, and get feedback on every topic.<div class="autopermalink" data-description="Paragraph"><a href="#sec-activities-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<section class="paragraphs" id="sec-activities-3"><h3 class="heading"><span class="title">Pre-lecture activities.</span></h3>
+<div class="para" id="sec-activities-3-2">Before each lecture, you will be expected to complete a reading assignment. The assignment may also include watching videos and completing a basic quiz. The goal of these activities is to prepare you for lecture. Your professor will also use your responses to these activities to prepare for lecture.<div class="autopermalink" data-description="Paragraph"><a href="#sec-activities-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Paragraphs: Pre-lecture activities"><a href="#sec-activities-3" title="Copy heading and permalink for Paragraphs: Pre-lecture activities" aria-label="Copy heading and permalink for Paragraphs: Pre-lecture activities">🔗</a></div></section><section class="paragraphs" id="sec-activities-4"><h3 class="heading"><span class="title">Lecture.</span></h3>
+<div class="para" id="sec-activities-4-2">Lectures will be interactive, with opportunities for you to ask questions and work on problems. Your professor will also use lecture to reinforce new concepts and provide context.<div class="autopermalink" data-description="Paragraph"><a href="#sec-activities-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Paragraphs: Lecture"><a href="#sec-activities-4" title="Copy heading and permalink for Paragraphs: Lecture" aria-label="Copy heading and permalink for Paragraphs: Lecture">🔗</a></div></section><section class="paragraphs" id="sec-activities-5"><h3 class="heading"><span class="title">WebAssignments.</span></h3>
+<div class="para" id="sec-activities-5-2">After lecture you will continue to practice the procedures and concepts through a “WebAssignment”—that is, an assignment on the WebAssign platform. You will have multiple opportunities to attempt these problems, and other problems like them. WebAssignments are due before recitation.<div class="autopermalink" data-description="Paragraph"><a href="#sec-activities-5-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Paragraphs: WebAssignments"><a href="#sec-activities-5" title="Copy heading and permalink for Paragraphs: WebAssignments" aria-label="Copy heading and permalink for Paragraphs: WebAssignments">🔗</a></div></section><section class="paragraphs" id="sec-activities-6"><h3 class="heading"><span class="title">Recitation.</span></h3>
+<div class="para" id="sec-activities-6-2">Recitation is your weekly class time with your teaching assistant. Recitation begins with a quiz and continues with supervised practice on worksheets.<div class="autopermalink" data-description="Paragraph"><a href="#sec-activities-6-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Paragraphs: Recitation"><a href="#sec-activities-6" title="Copy heading and permalink for Paragraphs: Recitation" aria-label="Copy heading and permalink for Paragraphs: Recitation">🔗</a></div></section><section class="paragraphs" id="sec-activities-7"><h3 class="heading"><span class="title">Problem sets.</span></h3>
+<div class="para" id="sec-activities-7-2">Problem sets are due at the end of each week. They are designed to challenge you to apply the concepts into new or unique situations. Problem sets are also where you learn to present worked solutions clearly and logically.<div class="autopermalink" data-description="Paragraph"><a href="#sec-activities-7-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Paragraphs: Problem sets"><a href="#sec-activities-7" title="Copy heading and permalink for Paragraphs: Problem sets" aria-label="Copy heading and permalink for Paragraphs: Problem sets">🔗</a></div></section><section class="paragraphs" id="sec-activities-8"><h3 class="heading"><span class="title">Exams.</span></h3>
+<div class="para" id="sec-activities-8-2">There will be three chapter tests (70 minutes long, during lecture), and one final exam (100 minutes long, during finals period). Chapter tests are summative assessments and comprehensive of the course material taught until that point. <em class="emphasis">Exams are designed to test your mastery of the course material at a deep and synthetic level, and whether you can apply it to new settings.</em> The final will be cumulative.<div class="autopermalink" data-description="Paragraph"><a href="#sec-activities-8-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Paragraphs: Exams"><a href="#sec-activities-8" title="Copy heading and permalink for Paragraphs: Exams" aria-label="Copy heading and permalink for Paragraphs: Exams">🔗</a></div></section><div class="autopermalink" data-description="Section: Learning Activities"><a href="#sec-activities" title="Copy heading and permalink for Section: Learning Activities" aria-label="Copy heading and permalink for Section: Learning Activities">🔗</a></div></section><section class="section" id="sec-materials"><h2 class="heading hide-type">
+<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Textbook and Other Required Materials</span>
+</h2>
+<div class="para logical" id="sec-materials-2">
+<dl class="description-list">
+<dt id="sec-materials-2-1-1">Textbook<div class="autopermalink" data-description="Item: Textbook"><a href="#sec-materials-2-1-1" title="Copy heading and permalink for Item: Textbook" aria-label="Copy heading and permalink for Item: Textbook">🔗</a></div>
+</dt>
+<dd><div class="para" id="sec-materials-2-1-1-2">The course will closely follow the textbook <span class="booktitle">Essential Calculus, Early Transcendentals</span>, by James Stewart. An electronic version of the text is included in WebAssign.<div class="autopermalink" data-description="Paragraph"><a href="#sec-materials-2-1-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></dd>
+<dt id="sec-materials-2-1-2">WebAssign<div class="autopermalink" data-description="Item: WebAssign"><a href="#sec-materials-2-1-2" title="Copy heading and permalink for Item: WebAssign" aria-label="Copy heading and permalink for Item: WebAssign">🔗</a></div>
+</dt>
+<dd>
+<div class="para" id="sec-materials-2-1-2-2">The required online homework platform for this course is <em class="emphasis">WebAssign for Essential Calculus</em> by Stewart. As part of the university’s <a class="external" href="https://www.nyu.edu/about/leadership-university-administration/office-of-the-president/office-of-the-executivevicepresident/finance-and-budget/campus-services/nyu-campus-stores/included.html" target="_blank">Folett ACCESS</a> program, it will be delivered to you digitally through a link in your section’s Brightspace site. The cost of the platform including the book is $24.25, which will be added as a “book charge” to your bursar bill. This is the only purchase you need to make for the course.<div class="autopermalink" data-description="Paragraph"><a href="#sec-materials-2-1-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec-materials-2-1-2-3">If you choose to purchase your course materials elsewhere, you must login to the <a class="external" href="https://includedcp.follett.com/2015" target="_blank">student portal</a> and opt out of the program. Then you can buy access independently through the <a class="external" href="https://www.bkstr.com/nyustore/home" target="_blank">NYU Bookstore</a>, or within WebAssign itself. For most students, the lowest price will be found through ACCESS. <em class="alert">If you do not opt out by February 4, you will be charged. If you do opt out, you are responsible for purchasing your own WebAssign access.</em><div class="autopermalink" data-description="Paragraph"><a href="#sec-materials-2-1-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</dd>
+<dt id="sec-materials-2-1-3">Brightspace<div class="autopermalink" data-description="Item: Brightspace"><a href="#sec-materials-2-1-3" title="Copy heading and permalink for Item: Brightspace" aria-label="Copy heading and permalink for Item: Brightspace">🔗</a></div>
+</dt>
+<dd><div class="para" id="sec-materials-2-1-3-2">Each lecturer will have their own <a class="external" href="https://brightspace.nyu.edu/" target="_blank">Brightspace</a> site, through which they will distribute lecture and study materials. Brightspace is your course hub which links to each of the other platforms used.<div class="autopermalink" data-description="Paragraph"><a href="#sec-materials-2-1-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></dd>
+<dt id="sec-materials-2-1-4">Gradescope<div class="autopermalink" data-description="Item: Gradescope"><a href="#sec-materials-2-1-4" title="Copy heading and permalink for Item: Gradescope" aria-label="Copy heading and permalink for Item: Gradescope">🔗</a></div>
+</dt>
+<dd><div class="para" id="sec-materials-2-1-4-2">You will scan and submit your written homework to <a class="external" href="https://gradescope.com/" target="_blank">Gradescope</a>. Homework will be graded and returned to you within Gradescope. Quizzes and exams will be taken on paper, but the instructional team will scan them and upload them to Gradescope. Graded quizzes and midterms will be returned to you using Gradescope. Regrades may be requested through Gradescope within five (5) university business days of the scores being published.<div class="autopermalink" data-description="Paragraph"><a href="#sec-materials-2-1-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></dd>
+<dt id="sec-materials-2-1-5">Discussion boards<div class="autopermalink" data-description="Item: Discussion boards"><a href="#sec-materials-2-1-5" title="Copy heading and permalink for Item: Discussion boards" aria-label="Copy heading and permalink for Item: Discussion boards">🔗</a></div>
+</dt>
+<dd><div class="para" id="sec-materials-2-1-5-2">Lecture sections may use <a class="external" href="https://edstem.org/" target="_blank">Ed Discussions</a>, <a class="external" href="https://campuswire.com/" target="_blank">Campuswire</a>, or the Brightspace Discussions tool to organize questions and discussion outside of class.<div class="autopermalink" data-description="Paragraph"><a href="#sec-materials-2-1-5-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></dd>
+<dt id="sec-materials-2-1-6">PollEverywhere<div class="autopermalink" data-description="Item: PollEverywhere"><a href="#sec-materials-2-1-6" title="Copy heading and permalink for Item: PollEverywhere" aria-label="Copy heading and permalink for Item: PollEverywhere">🔗</a></div>
+</dt>
+<dd><div class="para" id="sec-materials-2-1-6-2">Lecturers may use <a class="external" href="https://polleverywhere.com/" target="_blank">PollEverywhere</a> or other polling software to facilitate in-class discussion.<div class="autopermalink" data-description="Paragraph"><a href="#sec-materials-2-1-6-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></dd>
+</dl>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-materials-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Section: Textbook and Other Required Materials"><a href="#sec-materials" title="Copy heading and permalink for Section: Textbook and Other Required Materials" aria-label="Copy heading and permalink for Section: Textbook and Other Required Materials">🔗</a></div></section><section class="section" id="sec-grading"><h2 class="heading hide-type">
+<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Grading</span>
+</h2>
+<div class="para" id="sec-grading-2">Most of the grade components are identified above. Participation will be measured through attendance, completion of in-class activities, and written homework. The exact rubric may vary across lecture sections.<div class="autopermalink" data-description="Paragraph"><a href="#sec-grading-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec-grading-3">We will only count the top <em class="emphasis">half</em> of your quizzes and required WebAssignments, or as close to half as possible without going over if the total number is odd. This should wash out the effects of any unforeseen circumstances which prevent you from attending recitation or completing an assignment to the best of your ability. <em class="emphasis">There will be no other extensions or makeups beyond this generous drop policy</em>.<div class="autopermalink" data-description="Paragraph"><a href="#sec-grading-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec-grading-4">The grade components are averaged into a final calculated grade using the following weights:<div class="autopermalink" data-description="Paragraph"><a href="#sec-grading-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="tabular-box natural-width"><table class="tabular">
+<tr class="header-horizontal">
+<th scope="col" class="l m b1 r0 l0 t0 lines">Component</th>
+<th scope="col" class="l m b1 r0 l0 t0 lines">Weight</th>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Quizzes</td>
+<td class="l m b0 r0 l0 t0 lines">5%</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">WebAssignments</td>
+<td class="l m b0 r0 l0 t0 lines">5%</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Chapter 6 Test</td>
+<td class="l m b0 r0 l0 t0 lines">20%</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Chapter 7 Test</td>
+<td class="l m b0 r0 l0 t0 lines">20%</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Chapter 8 Test</td>
+<td class="l m b0 r0 l0 t0 lines">20%</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Final exam</td>
+<td class="l m b0 r0 l0 t0 lines">25%</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Participation</td>
+<td class="l m b0 r0 l0 t0 lines">5%</td>
+</tr>
+</table></div>
+<div class="para" id="sec-grading-6">Grades will be calculated to two decimal places. They will <em class="emphasis">not</em> be rounded up to the next whole number. The lower cutoff for each letter grade is given in the table below.<div class="autopermalink" data-description="Paragraph"><a href="#sec-grading-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="tabular-box natural-width"><table class="tabular">
+<tr class="header-horizontal">
+<th scope="col" class="c m b1 r0 l0 t0 lines">Letter Grade</th>
+<th scope="col" class="l m b1 r0 l0 t0 lines">Lower Cutoff</th>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">A</td>
+<td class="l m b0 r0 l0 t0 lines">93%</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">A-</td>
+<td class="l m b0 r0 l0 t0 lines">90%</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">B+</td>
+<td class="l m b0 r0 l0 t0 lines">87%</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">B</td>
+<td class="l m b0 r0 l0 t0 lines">83%</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">B-</td>
+<td class="l m b0 r0 l0 t0 lines">80%</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">C+</td>
+<td class="l m b0 r0 l0 t0 lines">75%</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">C</td>
+<td class="l m b0 r0 l0 t0 lines">65%</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">D</td>
+<td class="l m b0 r0 l0 t0 lines">50%</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">F</td>
+<td class="l m b0 r0 l0 t0 lines">0%</td>
+</tr>
+</table></div>
+<div class="para" id="sec-grading-8">It is possible that these cutoffs will be adjusted at the end of the semester, but only in the downward direction in order to raise letter grades slightly. There is no school- or departmentally-prescribed distribution of letter grades. Letter grades across sections will be comparable.<div class="autopermalink" data-description="Paragraph"><a href="#sec-grading-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Section: Grading"><a href="#sec-grading" title="Copy heading and permalink for Section: Grading" aria-label="Copy heading and permalink for Section: Grading">🔗</a></div></section><section class="section" id="sec-help"><h2 class="heading hide-type">
+<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Extra help and tutoring</span>
+</h2>
+<div class="para logical" id="sec-help-2">
+<div class="para">In large lecture classes, there is only a limited amount of time for direct instruction by the professor. Therefore, it is important that you take advantage of other resources available to you. This includes your office hours, recitation, discussion boards, and study groups with classmates. The University also provides a few options for extra help:</div>
+<ul class="disc" id="sec-help-2-1">
+<li id="sec-help-2-1-1">
+<div class="para" id="sec-help-2-1-1-1">The <a class="external" href="https://www.nyu.edu/students/academic-services/undergraduate-advisement/academic-resource-center/tutoring-and-learning.html" target="_blank">University Learning Center</a> offers a variety of services, including drop-in tutoring and review sessions. More information and schedules can be found on their website.<div class="autopermalink" data-description="Paragraph"><a href="#sec-help-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-help-2-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-help-2-1-2">
+<div class="para" id="sec-help-2-1-2-1">The Department of Mathematics runs an <a class="external" href="https://math.nyu.edu/dynamic/undergrad/tutoring/" target="_blank">Undergraduate Tutoring Center</a> in Warren Weaver Hall, room 505. More information and a schedule can be found on their website.<div class="autopermalink" data-description="Paragraph"><a href="#sec-help-2-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-help-2-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-help-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Section: Extra help and tutoring"><a href="#sec-help" title="Copy heading and permalink for Section: Extra help and tutoring" aria-label="Copy heading and permalink for Section: Extra help and tutoring">🔗</a></div></section><section class="section" id="sec-inst-statements"><h2 class="heading hide-type">
+<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Policy statements</span>
+</h2>
+<div class="para" id="sec-inst-statements-2">These are adapted from departmental and university policies.<div class="autopermalink" data-description="Paragraph"><a href="#sec-inst-statements-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<section class="subsection" id="subsec-accessibility"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Student Accessibility</span>
+</h3>
+<div class="para" id="subsec-accessibility-2">New York University is committed to providing equal educational opportunity and participation for students with disabilities or accessibility concerns. It is the University’s policy that no qualified student with a disability or accessibility concern be excluded from participating in any University program or activity, denied the benefits of any University program or activity, or otherwise subjected to discrimination with regard to any University program or activity. The <a class="external" href="https://www.nyu.edu/life/global-inclusion-and-diversity/centers-and-communities/accessibility.html" target="_blank">Moses Center for Accessibility and Inclusive Culture</a> determines qualified disability status and assists students in obtaining appropriate accommodations and services. CSA operates according to an Independent Living Philosophy and strives in its policies and practices to empower each student to become as independent as possible. Their services are designed to encourage independence, backed by a strong system of support. Any student who needs a reasonable accommodation based on a qualified disability or accessibility issue is required to register with the CSA for assistance.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-accessibility-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsection: Student Accessibility"><a href="#subsec-accessibility" title="Copy heading and permalink for Subsection: Student Accessibility" aria-label="Copy heading and permalink for Subsection: Student Accessibility">🔗</a></div></section><section class="subsection" id="subsec-religion"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Religious Observations</span>
+</h3>
+<div class="para" id="subsec-religion-2">
+<a class="external" href="https://www.nyu.edu/students/communities-and-groups/student-diversity/spiritual-life/religious-and-spiritual-life-on-campus/resources-faculty-staff.html" target="_blank">NYU’s Calendar Policy on Religious Holidays</a> states that members of any religious group may, without penalty, absent themselves from classes when required in compliance with their religious obligations. You must notify your professor in advance of religious holidays or observances that might coincide with exams, assignments, or class times to schedule mutually acceptable alternatives. Students may also contact <a class="external" href="mailto:religiousaccommodations@nyu.edu" target="_blank">religiousaccommodations@nyu.edu</a> for assistance.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-religion-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsection: Religious Observations"><a href="#subsec-religion" title="Copy heading and permalink for Subsection: Religious Observations" aria-label="Copy heading and permalink for Subsection: Religious Observations">🔗</a></div></section><section class="subsection" id="subsec-dei"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Diversity, Equity, and Inclusion</span>
+</h3>
+<div class="para" id="subsec-dei-2">As instructors, we will strive to create a safe, respectful, and inclusive environment for all students regardless of their identity. We recognize and value diversity inside and outside of the classroom, and recognize that each student has a unique contribution to make and brings with them different strengths and weaknesses. We welcome your ideas for how to promote a better understanding and deeper learning in this class as a community. Please feel free to ask questions, to participate in discussions, and to suggest new approaches to the class content. Please also feel welcome to raise any issue you may have in class or outside of class, including reporting incidents of bias or discrimination, whether intentional or unintentional, either to your instructor, to your advisor(s)/mentor(s), or by using the <a class="external" href="https://www.nyu.edu/about/policies-guidelines-compliance/equal-opportunity/bias-response.html" target="_blank">NYU Bias Response Line</a>.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-dei-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsection: Diversity, Equity, and Inclusion"><a href="#subsec-dei" title="Copy heading and permalink for Subsection: Diversity, Equity, and Inclusion" aria-label="Copy heading and permalink for Subsection: Diversity, Equity, and Inclusion">🔗</a></div></section><section class="subsection" id="subsec-academic-integrity"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Academic Integrity</span>
+</h3>
+<div class="para" id="subsec-academic-integrity-2">All students are expected to abide by the CAS Honor Code to be found in the <a class="external" href="https://cas.nyu.edu/academic-integrity.html" target="_blank">Academic Policies</a> page. Academic integrity is part of your reputation as a responsible student and adult. Violations of the policy are a breach of the trust between professor and student. It is unfair to your fellow students, to the faculty, and to yourself.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-academic-integrity-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="subsec-academic-integrity-3">
+<div class="para">The following are considered violations of academic integrity:</div>
+<ol class="decimal" id="subsec-academic-integrity-3-1">
+<li id="subsec-academic-integrity-3-1-1">
+<div class="para" id="subsec-academic-integrity-3-1-1-1">Copying answers from Wolfram Alpha, Symbolab, ChatGPT, or any other computational or large language models website. You can use technology to check your work, but if you submit it without thought you are cheating yourself of the point of the exercise.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-academic-integrity-3-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 1"><a href="#subsec-academic-integrity-3-1-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="subsec-academic-integrity-3-1-2">
+<div class="para" id="subsec-academic-integrity-3-1-2-1">Copying answers to problems from another website such as Chegg, Math Stack Exchange, Yahoo! Answers, etc. The graders will be able to detect if you’ve copied your work. Aside from the integrity issue, students who short-circuit the homework process usually do not do well on quizzes and exams.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-academic-integrity-3-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 2"><a href="#subsec-academic-integrity-3-1-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+<li id="subsec-academic-integrity-3-1-3">
+<div class="para" id="subsec-academic-integrity-3-1-3-1">Sharing answers with other students in an unofficial group or server<div class="autopermalink" data-description="Paragraph"><a href="#subsec-academic-integrity-3-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 3"><a href="#subsec-academic-integrity-3-1-3" title="Copy heading and permalink for Item 3" aria-label="Copy heading and permalink for Item 3">🔗</a></div>
+</li>
+<li id="subsec-academic-integrity-3-1-4">
+<div class="para" id="subsec-academic-integrity-3-1-4-1">Discussing quizzes and exams at any time the quiz or exam is active<div class="autopermalink" data-description="Paragraph"><a href="#subsec-academic-integrity-3-1-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 4"><a href="#subsec-academic-integrity-3-1-4" title="Copy heading and permalink for Item 4" aria-label="Copy heading and permalink for Item 4">🔗</a></div>
+</li>
+<li id="subsec-academic-integrity-3-1-5">
+<div class="para" id="subsec-academic-integrity-3-1-5-1">Arranging for another person to take a quiz or exam in your stead<div class="autopermalink" data-description="Paragraph"><a href="#subsec-academic-integrity-3-1-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 5"><a href="#subsec-academic-integrity-3-1-5" title="Copy heading and permalink for Item 5" aria-label="Copy heading and permalink for Item 5">🔗</a></div>
+</li>
+<li id="subsec-academic-integrity-3-1-6">
+<div class="para" id="subsec-academic-integrity-3-1-6-1">Altering graded work to raise scores<div class="autopermalink" data-description="Paragraph"><a href="#subsec-academic-integrity-3-1-6-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 6"><a href="#subsec-academic-integrity-3-1-6" title="Copy heading and permalink for Item 6" aria-label="Copy heading and permalink for Item 6">🔗</a></div>
+</li>
+<li id="subsec-academic-integrity-3-1-7">
+<div class="para" id="subsec-academic-integrity-3-1-7-1">Fabricating excuses or forging documentation for makeup exams<div class="autopermalink" data-description="Paragraph"><a href="#subsec-academic-integrity-3-1-7-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 7"><a href="#subsec-academic-integrity-3-1-7" title="Copy heading and permalink for Item 7" aria-label="Copy heading and permalink for Item 7">🔗</a></div>
+</li>
+</ol>
+<div class="para">This list should not be considered exhaustive.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-academic-integrity-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-academic-integrity-4">If a student submits work that is not their own, with the intention to deceive the instructor, then the instructor has no way to evaluate the student’s learning.  This usually results in a score of zero, at a minimum.  Additionally, any such findings will be reported to the applicable dean in the student’s school, for recordkeeping and possible further disciplinary action.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-academic-integrity-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-academic-integrity-5">Please also abide by the NYU <a class="external" href="https://nyu.service-now.com/sp?id=kb_article&amp;sysparm_article=KB0013529&amp;sys_kb_id=4f2efc9b0f8982804d20348ce1050eb7&amp;spa=1" target="_blank">policy on illegal downloading of copyrighted material</a>, including textbooks.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-academic-integrity-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsection: Academic Integrity"><a href="#subsec-academic-integrity" title="Copy heading and permalink for Subsection: Academic Integrity" aria-label="Copy heading and permalink for Subsection: Academic Integrity">🔗</a></div></section><div class="autopermalink" data-description="Section: Policy statements"><a href="#sec-inst-statements" title="Copy heading and permalink for Section: Policy statements" aria-label="Copy heading and permalink for Section: Policy statements">🔗</a></div></section><div class="autopermalink" data-description="Article: MATH-UA 122 Calculus II"><a href="#syllabus" title="Copy heading and permalink for Article: MATH-UA 122 Calculus II" aria-label="Copy heading and permalink for Article: MATH-UA 122 Calculus II">🔗</a></div></section></div>
+<div id="ptx-content-footer" class="ptx-content-footer">
+<span class="previous-button button disabled"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></span><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><span class="next-button button disabled"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></span>
+</div></main>
+</div>
+<div id="ptx-page-footer" class="ptx-page-footer">
+<a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="338 3000 8772 6866" role="img"><title>PreTeXt logo</title><g style="stroke-width:.025in; stroke:currentColor; fill:none"><polyline points="472,3590 472,9732 " style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png" alt="Runstone Academy logo"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png" alt="MathJax logo"></a>
+</div>
+</body>
+</html>
