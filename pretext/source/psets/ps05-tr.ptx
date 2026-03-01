@@ -4,25 +4,135 @@
   <article>
     <section xml:id="ps05-section">
       <title>Problem Set 5 (TR Sections)</title>
+
       <subtitle>Improper Integrals and Chapter 6 Review</subtitle>
       <ns0:include href="ps01-tr.ptx" xpointer="xpointer(//section[1]/introduction)" />
       <exercises>
-
         <exercise xml:id="ex-improper-integral-type-2">
           <statement>
-            <p> Determine if the integral <me>\int_0^1 \frac{1}{\sqrt{x}} \,dx</me> converges or
-              diverges. If it converges, find its value. </p>
+            <p>
+              Determine if the integral
+              <me>
+                \int_0^1 \frac{1}{\sqrt{x}} \,dx
+              </me>
+              converges or diverges.
+              If it converges, find its value.
+            </p>
           </statement>
-          </exercise>
 
+          </exercise>
 
         <exercise xml:id="ex-improper-integral-type-1">
           <statement>
-            <p> Determine if the integral <me>\int_1^\infty \frac{1}{x^3} \,dx</me> converges or
-              diverges. If it converges, find its value. </p>
+            <p>
+              Determine if the integral
+              <me>
+                \int_1^\infty \frac{1}{x^3} \,dx
+              </me>
+              converges or diverges.
+              If it converges, find its value.
+            </p>
           </statement>
+
           </exercise>
 
+        <exercise xml:id="ex-improper-integral-comparison-test">
+          
+          <statement>
+            <p>
+              Use the comparison test to determine if the integral
+              <me>
+                \int_1^\infty \frac{x^3}{x^5+2} \,dx
+              </me>
+              converges or diverges.
+            </p>
+          </statement>
+
+          </exercise>
+
+        <exercise>
+          
+          <introduction>
+            <p>
+              We claim that 
+              <me>
+                \int_0^\infty \frac{\ln x}{1+x^2} \,dx = 0 
+              </me>            
+            </p>
+          </introduction>
+          <task>
+            <statement>
+              <p>
+                First, show that <m>\displaystyle\int_1^\infty \frac{\ln x}{1+x^2} \,dx</m> converges.
+              </p>
+            </statement>
+            </task>
+          <task>
+            <statement>
+              <p>
+                Next, show that <m>\displaystyle\int_0^1 \frac{\ln x}{1+x^2} \,dx = - \int_1^\infty \frac{\ln x}{1+x^2} \,dx</m>
+              </p>
+            </statement>
+            <hint>
+              <p>
+                Use the substitution <m>u = \frac{1}{x}</m>.
+              </p>
+            </hint>
+            </task>
+          <task>
+            <statement>
+              <p>
+                Finally, conclude that
+                <me>
+                  \int_0^\infty \frac{\ln x}{1+x^2} \,dx = 0
+                </me>
+              </p>
+            </statement>
+            </task>
+        </exercise>
+
+        <exercise>
+          
+          <introduction>
+            <p>
+              We can extend our definition of the average value of a continuous
+              function to an infinite integral by defining the average value of 
+              <m>f</m> on <m>[a,\infty)</m> to be 
+              <me>
+                \bar f = \lim_{t\to\infty}\frac{1}{t-a} \int_a^\infty f(x)\,dx
+              </me>
+            </p>
+          </introduction>
+          <task>
+            <statement>
+              <p>
+                Find the average value of <m>y = \tan^{-1} x</m> on the interval <m>[0,\infty)</m>.
+              </p>
+            </statement>
+            </task>
+          <task>
+            <statement>
+              <p>
+                If <m>f(x) \geq 0</m>, <m>\lim_{x\to\infty} f(x) = L</m> exists, 
+                and <m>\int_a^\infty f(x)\,dx</m> diverges, show that <m>\bar f = L</m>.
+              </p>
+            </statement>
+            </task>
+          <task>
+            <statement>
+              <p>
+                What is <m>\bar f</m> if <m>\int_a^\infty f(x)\,dx</m> converges?
+              </p>
+            </statement>
+            </task>
+          <task>
+            <statement>
+              <p>
+                Find the average value of <m>y = \sin x</m> on the interval <m>[0,\infty)</m>.
+              </p>
+            </statement>
+            </task>
+        </exercise>
       </exercises>
     </section>
   </article>
