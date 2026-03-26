@@ -243,7 +243,7 @@ f(t,y) = y-1
             <p>
               Show that <m>y^2 + (y/y')^2 = \ell^2</m> and conclude that
               <me>
-                y' = - \frac{y}{1-y^2}
+                y' = - \frac{y}{\sqrt{\ell^2 - y^2}}
               </me>
               Why must we choose the negative square root in this expression for <m>y'</m>?
             </p>
