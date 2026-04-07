@@ -9,6 +9,23 @@
             <ns0:include href="ps01-tr.ptx" xpointer="xpointer(//section[1]/introduction)" />
             <exercises>
 
+                <exercise xml:id="ex-spivak-22-1-xv">
+                    <task>
+                        <statement>
+                            <p>
+                                Decide if the series <m>\sum_{n=2}^\infty \frac{1}{n \ln n}</m> converges.
+                            </p>
+                        </statement>
+                        </task>
+                    <task>
+                        <statement>
+                            <p>
+                                Decide if the series <m>\sum_{n=2}^\infty \frac{1}{n (\ln n)^2}</m> converges.
+                            </p>
+                        </statement>
+                        </task>
+                </exercise>
+
                 <exercise xml:id="ex-integral-test">
                     <task>
                         <statement>
@@ -30,6 +47,33 @@
                         </statement>
                         </task>
                 </exercise>
+
+                <exercise xml:id="ex-spivak-22-1-iv">
+                    <statement>
+                        <p>
+                            Decide if the series <m>\sum_{n=2}^\infty \frac{1}{\sqrt[3]{n^2-1}}</m> converges.
+                        </p>
+                    </statement>
+                    </exercise>
+
+                <exercise xml:id="ex-sum-sin-1-on-n">
+                    <statement>
+                        <p> Determine whether the series <m>\sum_{n=1}^\infty \sin\left(\frac{1}{n}\right)</m> converges or diverges. </p>
+                    </statement>
+                    </exercise>  
+                
+                <exercise>
+                    <statement>
+                        <p>
+                            Decide if the series <m>\sum_{n=1}^\infty \left(1 - 2^{-1/n}\right)</m> converges.
+                        </p>
+                    </statement>
+                    <hint>
+                        <p>
+                            Use the limit comparison test with the series <m>\sum_{n=1}^\infty \frac{1}{n}</m>.
+                        </p>
+                    </hint>
+                    </exercise>
 
                 <exercise xml:id="ex-comparison-test">
                     <task>
