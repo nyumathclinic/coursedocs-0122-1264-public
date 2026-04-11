@@ -7,6 +7,44 @@
       <subtitle>Power Series</subtitle>
       <ns0:include href="ps01-tr.ptx" xpointer="xpointer(//section[1]/introduction)" />
       <exercises>
+        <exercise xml:id="ex-Rogawski-11-6-3">
+          <introduction>
+            <p>Show that the three power series below have the same radius of convergence,
+            but three different intervals of convergence.</p>
+          </introduction>
+          <task>
+            <statement>
+              <p><m>\sum_{n=1}^\infty \frac{x^n}{3^n}</m></p>
+            </statement>
+            </task>
+          <task>
+            <statement>
+              <p><m>\sum_{n=1}^\infty \frac{x^n}{n3^n}</m></p>
+            </statement>
+            </task>
+          <task>
+            <statement>
+              <p><m>\sum_{n=1}^\infty \frac{x^n}{n^23^n}</m></p>
+            </statement>
+            </task>
+        </exercise>
+
+        <exercise xml:id="ex-Rogawski-11-6-78">
+          <introduction>
+            <p>Find the radius of convergence.</p>
+          </introduction>
+          <task>
+            <statement>
+              <p><m>\sum_{n=0}^\infty \frac{x^{2n}}{3^n}</m></p>
+            </statement>
+            </task>
+          <task>
+            <statement>
+              <p><m>\sum_{n=0}^\infty \frac{x^{3n+1}}{64^n}</m></p>
+            </statement>
+            </task>
+        </exercise>
+
         <exercise xml:id="ex-power-series-convergence-revised">
           <statement>
             <p> Find the radius of convergence and interval of convergence for the series <me>\sum_{n=2}^\infty
@@ -35,6 +73,20 @@
             </statement>
             </task>
         </exercise>
+
+        <exercise xml:id="ex-Rogawski-11-6-53">
+          <statement>
+            <p>Show that the power series
+              <me>
+                F(x) = 1-x-x^2+x^3-x^4-x^5+x^6-x^7-x^8\cdots
+              </me>
+              converges for <m>|x| &lt; 1</m>, and compute its sum as a rational function of <m>x</m>. 
+            </p>
+          </statement>
+          <hint>
+            <p>Write <m>F(x)</m> as the sum of three geometric series.</p>
+          </hint>
+          </exercise>
 
         <exercise xml:id="mpl-2025-11-15-pi">
           <task xml:id="mpl-2025-11-15-pi-trigident">
@@ -74,7 +126,7 @@
                   in terms of arctangents of smaller rational numbers: <me>
                     \frac{\pi}{4} = 4 \tan^{-1}\left(\frac{1}{5}\right) -
                   \tan^{-1}\left(\frac{1}{239}\right)
-                  </me>.d
+                  </me>
                   It converges more quickly than the formula derived in this problem. </p>
               </aside>
             </statement>
