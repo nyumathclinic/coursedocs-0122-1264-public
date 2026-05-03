@@ -54,7 +54,7 @@
                             <ns1:definition>c(t) = (f(t),g(t))</ns1:definition>
                             <ns1:coordinates bbox="(-1,-1,10,10)">
                               <ns1:axes xlabel="x" ylabel="y" />
-                              <ns1:parametric-curve function="c" domain="(-5,5)" />
+                              <ns1:parametric-curve function="c" domain="(-5,5)" stroke="UltraViolet" />
                             </ns1:coordinates>
                           </ns1:diagram>
                         </ns1:prefigure>
@@ -76,7 +76,7 @@
                             <ns1:definition>c(t) = (f(t),g(t))</ns1:definition>
                             <ns1:coordinates bbox="(-10,-20,10,20)">
                               <ns1:axes xlabel="x" ylabel="y" />
-                              <ns1:parametric-curve function="c" domain="(-5,5)" />
+                              <ns1:parametric-curve function="c" domain="(-5,5)" stroke="UltraViolet" />
                             </ns1:coordinates>
                           </ns1:diagram>
                         </ns1:prefigure>
@@ -100,7 +100,7 @@
                             <ns1:definition>c(t) = (f(t),g(t))</ns1:definition>
                             <ns1:coordinates bbox="(-10,-20,10,20)">
                               <ns1:axes xlabel="x" ylabel="y" />
-                              <ns1:parametric-curve function="c" domain="(-5,5)" />
+                              <ns1:parametric-curve function="c" domain="(-5,5)" stroke="UltraViolet" />
                             </ns1:coordinates>
                           </ns1:diagram>
                         </ns1:prefigure>
@@ -122,7 +122,7 @@
                             <ns1:definition>c(t) = (f(t),g(t))</ns1:definition>
                             <ns1:coordinates bbox="(-1.5,-6.5,1.5,6.5)">
                               <ns1:axes xlabel="x" ylabel="y" v-pi-format="yes" />
-                              <ns1:parametric-curve function="c" domain="(-2*pi,2*pi)" />
+                              <ns1:parametric-curve function="c" domain="(-2*pi,2*pi)" stroke="UltraViolet" />
                             </ns1:coordinates>
                           </ns1:diagram>
                         </ns1:prefigure>
@@ -134,6 +134,106 @@
             </p>
           </statement>
           </exercise>
+
+        <exercise xml:id="ex-Rogawski-12-01-3457">
+          <introduction>
+            <p>
+              Find parametric equations for the following curves.
+            </p>
+          </introduction>
+          <task xml:id="ex-Rogawski-12-01-34">
+            <statement>
+              <p>
+                The line segment joining <m>(-3,0)</m> and <m>(0,4)</m>
+              </p>
+            </statement>
+            </task>
+          <task xml:id="ex-Rogawski-12-01-35">
+            <statement>
+              <p>
+                The circle of radius 4 with center <m>(3,9)</m>
+              </p>
+            </statement>
+            </task>
+          <task xml:id="ex-Rogawski-12-01-37">
+            <statement>
+              <p>
+                The parabolic curve shown in <xref ref="ex-Rogawski-12-01-37-fig" />. 
+              </p>
+              <figure xml:id="ex-Rogawski-12-01-37-fig">
+                <image>
+                  <ns1:prefigure label="ex-Rogawski-12-01-37-prefig">
+                    <ns1:diagram dimensions="(300,300)" margins="5">
+                      <ns1:definition>UltraViolet="#8900e1"</ns1:definition>
+                      <ns1:definition>f(x) = (x+2)^2-4</ns1:definition>
+                      <ns1:coordinates bbox="(-6,-5,4,5)">
+                        <ns1:axes xlabel="x" ylabel="y" />
+                        <ns1:graph function="f" stroke="UltraViolet" />
+                        <ns1:point fill="UltraViolet" stroke="UltraViolet" size="2" p="(-2,-4)" alignment="sw"><ns1:m>(-2,-4)</ns1:m></ns1:point>
+                      </ns1:coordinates>
+                    </ns1:diagram>
+                  </ns1:prefigure>
+                </image>
+              </figure>
+            </statement>
+            </task>
+        </exercise>
+
+        <exercise xml:id="ex-Rogawski-12-01-64">
+          <statement>
+            <p>A <quantity><mag>10</mag><unit base="foot" /></quantity> ladder slides down a wall as its bottom B is pulled away from the wall (Figure <xref ref="ex-Rogawski-12-01-64-fig" />). 
+              Using the angle <m>\theta</m> as parameter, find the parametric equations for the path followed by:
+              <ol>
+                <li>the top of the ladder <m>A</m></li>
+                <li>the bottom of the ladder <m>B</m></li>
+                <li>the point <m>P</m> located <quantity><mag>4</mag><unit base="foot" /></quantity> from the top of the ladder</li>
+              </ol>
+              Show that <m>P</m> describes an ellipse.
+            </p>
+            <figure xml:id="ex-Rogawski-12-01-64-fig">
+              <image>
+                <ns1:prefigure label="ex-Rogawski-12-01-64-prefig">
+                  <ns1:diagram dimensions="(300,300)" margins="5">
+                    <ns1:definition>th = 0.8</ns1:definition>
+                    <ns1:definition>xP = 4*cos(th)</ns1:definition>
+                    <ns1:definition>yP = 6*sin(th)</ns1:definition>
+                    <ns1:definition>xB = 10*cos(th)</ns1:definition>
+                    <ns1:definition>yA = 10*sin(th)</ns1:definition>
+                    <ns1:definition>ellipse(t) = (4*cos(t),6*sin(t))</ns1:definition>
+                    <ns1:definition>NyuViolet="#57068c"</ns1:definition>
+                    <ns1:definition>UltraViolet="#8900e1"</ns1:definition>
+                    <ns1:definition>MediumViolet1="#702b9d"</ns1:definition>
+                    <ns1:definition>MediumViolet2="#7b5aa6"</ns1:definition>
+                    <ns1:definition>LightViolet1="#ab82c5"</ns1:definition>
+                    <ns1:definition>LightViolet2="#eee6f3"</ns1:definition>
+                    <ns1:definition>Magenta="#fb0f78"</ns1:definition>
+                    <ns1:definition>DarkGray="#404040"</ns1:definition>
+                    <ns1:definition>MediumGray2="#b8b8b8"</ns1:definition>
+                    <ns1:coordinates bbox="(-1,-1,10,10)">
+                      <ns1:axes xlabel="x" ylabel="y" decorations="no" />
+                      <ns1:parametric-curve function="ellipse" domain="(0,pi/2)" stroke="UltraViolet" />
+                      <ns1:polygon points="((0,yA),(xB,0))" closed="no" stroke="NyuViolet" />
+                      <ns1:polygon points="((xP,0),(xP,yP))" closed="no" stroke="MediumGray2" />
+                      <ns1:polygon points="((0,yP),(xP,yP))" closed="no" stroke="MediumGray2" />
+                      <ns1:point p="(0,yA)" stroke="NyuViolet" fill="NyuViolet" size="2" alignment="nw"><ns1:m>A</ns1:m></ns1:point>
+                      <ns1:point p="(xB,0)" stroke="NyuViolet" fill="NyuViolet" size="2" alignment="s"><ns1:m>B</ns1:m></ns1:point>
+                      <ns1:point p="(xP,yP)" stroke="NyuViolet" fill="NyuViolet" size="2"><ns1:m>P=(x,y)</ns1:m></ns1:point>
+                      <ns1:label anchor="(xP/2-0.2,(yP+yA)/2)" alignment="ne"><ns1:m>4</ns1:m></ns1:label>
+                      <ns1:label anchor="((xP+xB)/2,(yP)/2)" alignment="ne"><ns1:m>6</ns1:m></ns1:label>
+                      <ns1:angle-marker points="((0,yA),(xB,0),(xB-1,0))" thickness="1">
+                        <ns1:m>\theta</ns1:m>
+                      </ns1:angle-marker>
+                      <ns1:line p1="(xB,0.25)" p2="(xB+1,0.25)" stroke="Magenta" arrows="1" />
+                      <ns1:line p1="(-0.25,yA)" p2="(-0.25,yA-1)" stroke="Magenta" arrows="1" />
+                    </ns1:coordinates>
+                  </ns1:diagram>
+                </ns1:prefigure>
+              </image>
+            </figure>
+          </statement>
+          </exercise>
+
+
         <exercise xml:id="ex-parametric-derivatives">
           <statement>
             <p> A curve is defined by the parametric equations <m>x(t) = t^2+1</m> and <m>y(t)=t^3-1</m>.
@@ -149,6 +249,62 @@
           </statement>
           </exercise>
 
+      <exercise xml:id="ex-Larson-10-03-84">
+        <introduction>
+          <p>
+            The <url href="https://en.wikipedia.org/wiki/Deltoid_curve"><em>deltoid curve</em></url>
+            is formed by a point on a circle of radius <m>a</m> as it rolls around the inside of a circle
+            of radius <m>3a</m>. It has parametric equations:
+            <md>
+              <mrow> x &amp;= 2a \cos t + a \cos 2t</mrow>
+              <mrow> y &amp;= 2a \sin t - a \sin 2t</mrow>
+            </md>
+            over the interval <m> 0\leq t \leq 2\pi</m>.
+            See <xref ref="ex-Larson-10-03-84-fig" />.
+          </p>
+            <figure xml:id="ex-Larson-10-03-84-fig">
+              <image>
+                <ns1:prefigure label="ex-Larson-10-03-84-prefig">
+                  <ns1:diagram dimensions="(300,300)" margins="5">
+                    <ns1:definition>NyuViolet="#57068c"</ns1:definition>
+                    <ns1:definition>UltraViolet="#8900e1"</ns1:definition>
+                    <ns1:definition>MediumViolet1="#702b9d"</ns1:definition>
+                    <ns1:definition>MediumViolet2="#7b5aa6"</ns1:definition>
+                    <ns1:definition>LightViolet1="#ab82c5"</ns1:definition>
+                    <ns1:definition>LightViolet2="#eee6f3"</ns1:definition>
+                    <ns1:definition>Magenta="#fb0f78"</ns1:definition>
+                    <ns1:definition>DarkGray="#404040"</ns1:definition>
+                    <ns1:definition>MediumGray2="#b8b8b8"</ns1:definition>
+                    <ns1:definition>a=1</ns1:definition>
+                    <ns1:definition>c(t) = (2*a*cos(t)+a*cos(2*t),2*a*sin(t)-a*sin(2*t))</ns1:definition>
+                    <ns1:coordinates bbox="(-4,-4,4,4)">
+                      <ns1:parametric-curve function="c" domain="(0,2*pi)" stroke="UltraViolet" fill="LightViolet1" arrows="1" arrow-location="0.85*2*pi" />
+                      <ns1:axes xlabel="x" ylabel="y" decorations="no" hticks="(a,a,3*a)" />
+                      <ns1:label anchor="(a,0)" alignment="s"><ns1:m>a</ns1:m></ns1:label>
+                    </ns1:coordinates>
+                  </ns1:diagram>
+                </ns1:prefigure>
+              </image>
+            </figure>
+        </introduction>
+        <task>
+          <statement>
+            <p>
+              Show that the area enclosed by the deltoid curve is equal to
+              <me>
+                A = -2 \int_0^\pi y(t) x'(t) \,dt
+              </me>.
+            </p>
+          </statement>
+          </task>
+        <task>
+          <statement>
+            <p>
+              Evaluate the expression in (a) to find the area.
+            </p>
+          </statement>
+          </task>
+      </exercise>
 
       </exercises>
     </section>

@@ -13,6 +13,40 @@
           </statement>
           </exercise>
 
+        <exercise xml:id="ex-Rogawski-11-7-51">
+          <statement>
+            <p>
+              Express <m>\int_0^1 e^{-x^3}\,dx</m> as the sum of a series.
+              Approximate its value to within an error of at most <m>10^{-4}</m>.
+            </p>
+          </statement>
+          </exercise>
+
+        <exercise xml:id="ex-Rogawski-11-7-678">
+          <introduction>
+            <p>Let <me>f(x) = \frac{1}{(1-x)(1-2x)}</me></p>
+          </introduction>
+          <task xml:id="ex-Rogawski-11-7-67">
+            <statement>
+              <p>
+                Use the partial fraction decomposition to find the Maclaurin series for <m>f(x)</m>.
+              </p>
+            </statement>
+            </task>
+          <task xml:id="ex-Rogawski-11-7-68">
+            <statement>
+              <p>
+                  Find the Taylor series for <m>f(x)</m> centered at <m>a=2</m>.
+              </p>
+            </statement>
+            <hint>
+              <p>
+                Use the same partial fraction decomposition, and substitute <m> x = 2 + (x-2) </m>.
+              </p>
+            </hint>
+            </task>
+        </exercise>
+
         <exercise xml:id="Rogawski-11-7-83">
           <statement>
             <p>
@@ -22,6 +56,94 @@
             </p>
           </statement>
           </exercise>
+
+        <exercise xml:id="ex-Rogawski-11-7-84">
+          <statement>
+            <p>
+              In this exercise we will prove that the Maclaurin series for 
+              <m>f(x) = ln(1+x)</m> converges to <m>f(1)</m> at <m>x=1</m>.
+              This allows us to find the sum of the alternating harmonic series.
+            </p>
+          </statement>
+          <task>
+            <statement>
+              <p>
+                Show that for <em>all</em> <m>x\neq 1</m> and all
+                natural numbers <m>N</m> that:
+                <me>
+                  \frac{1}{1+x} = \sum_{n=0}^N(-1)^nx^n + \frac{(-1)^{N+1}x^{N+1}}{1+x}
+                </me>
+              </p>
+            </statement>
+            </task>
+          <task>
+            <statement>
+              <p>
+                Integrate from <m>x=0</m> to <m>1</m> to obtain:
+                <me>
+                  \sum_{n=1}^{N+1} \frac{(-1)^{n+1}}{n} 
+                  = \ln 2 + (-1)^N \int_0^1 \frac{x^{N+1}}{1+x}\,dx
+                </me>
+              </p>
+            </statement>
+            </task>
+          <task>
+            <statement>
+              <p>
+                Show that the integral on the right-hand side is smaller than
+                <m>\frac{1}{N+2}</m> in absolute value. 
+              </p>
+            </statement>
+            </task>
+          <task>
+            <statement>
+              <p>
+                Conclude that the infinite series on the left-hand side converges to <m>\ln 2</m>:
+                <me>
+                  \sum_{n=1}^\infty \frac{(-1)^{n+1}}{n} = \ln 2.
+                </me>
+              </p>
+            </statement>
+            </task>          
+        </exercise>
+        <exercise xml:id="ex-Rogawski-11-7-91">
+          <title>
+            Irrationality of <m>e</m>
+          </title>
+          <introduction>
+            <p>
+              We will show that <m>e</m> is irrational using a proof by contradiction.
+              Suppose that <m> e=M/N</m>, where <m>M</m> and <m>N</m> are positive integers.
+            </p>
+          </introduction>
+          <task>
+            <statement>
+              <p>
+                Show that <m>M!/e</m> is an integer.
+              </p>
+            </statement>
+            </task>
+          <task>
+            <statement>
+              <p>
+                Use the Maclaurin series for <m>e^x</m> evaluated at <m>x=-1</m> 
+                to show that there exists an integer <m>B</m> such that
+                <me>
+                  \frac{M!}{e} = B + (-1)^{M+1}\left(\frac{1}{M+1} - \frac{1}{(M+1)(M+2)} + \cdots \right)
+                </me>
+              </p>
+            </statement>
+            </task>
+          <task>
+            <statement>
+              <p>
+                Use what you know about sums of alternating series with decreasing terms
+                to show that <m>\left|M!/e - B\right|</m> is an integer strictly between <m>0</m> and <m>1</m>.
+                Contradiction!
+              </p>
+            </statement>
+            </task>
+        </exercise>
       </exercises>
     </section>
   </article>

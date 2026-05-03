@@ -73,8 +73,8 @@ f(t) = sqrt(cos(2*t))
             </ns1:definition>
             <ns1:coordinates bbox="(-1.25,-1.25,1.25,1.25)">
             <ns1:group>
-            <ns1:graph function="f" domain="(-pi/4,pi/4)" coordinates="polar" closed="yes" />
-            <ns1:graph function="f" domain="(3*pi/4,5*pi/4)" coordinates="polar" closed="yes" />
+            <ns1:graph function="f" domain="(-pi/4,pi/4)" coordinates="polar" closed="yes" stroke="UltraViolet" />
+            <ns1:graph function="f" domain="(3*pi/4,5*pi/4)" coordinates="polar" closed="yes" stroke="UltraViolet" />
             </ns1:group>
             <ns1:grid-axes coordinates="polar" spacings="((0,0.5,1),(0,30,360))" xlabel="x" ylabel="y" spacing-degrees="yes" stroke="gray" />
             </ns1:coordinates>
@@ -143,44 +143,24 @@ f(t) = sqrt(cos(2*t))
       <exercise xml:id="ex-Rogawski-12-02-10">
         <statement>
           <p>
-            In Problem Set 11 we studied the lemniscate curve <m>r^2 = \cos(2\theta)</m>.
+            In <xref ref="ex-Rogawski-12-01-53" /> we studied the lemniscate curve <m>r^2 = \cos(2\theta)</m>.
             Find the area enclosed by one loop of the lemniscate.
           </p>
 
           <image width="60%">
             <ns1:prefigure label="ex-Rogawski-12-02-10-figure">
             <ns1:diagram dimensions="(300,300)" margins="5">
-            <ns1:definition>
-NyuViolet="#57068c"
-            </ns1:definition>
-
-            <ns1:definition>
-UltraViolet="#8900e1"
-            </ns1:definition>
-
-            <ns1:definition>
-MediumViolet1="#702b9d"
-            </ns1:definition>
-
-            <ns1:definition>
-MediumViolet2="#7b5aa6"
-            </ns1:definition>
-
-            <ns1:definition>
-LightViolet1="#ab82c5"
-            </ns1:definition>
-
-            <ns1:definition>
-LightViolet2="#eee6f3"
-            </ns1:definition>
-
-            <ns1:definition>
-f(t) = sqrt(cos(2*t))
-            </ns1:definition>
+            <ns1:definition>NyuViolet="#57068c"</ns1:definition>
+            <ns1:definition>UltraViolet="#8900e1"</ns1:definition>
+            <ns1:definition>MediumViolet1="#702b9d"</ns1:definition>
+            <ns1:definition>MediumViolet2="#7b5aa6"</ns1:definition>
+            <ns1:definition>LightViolet1="#ab82c5"</ns1:definition>
+            <ns1:definition>LightViolet2="#eee6f3"</ns1:definition>
+            <ns1:definition>f(t) = sqrt(cos(2*t))</ns1:definition>
             <ns1:coordinates bbox="(-1.25,-1.25,1.25,1.25)">
             <ns1:group>
-            <ns1:graph function="f" domain="(-pi/4,pi/4)" coordinates="polar" closed="yes" fill="#ab82c5" />
-            <ns1:graph function="f" domain="(3*pi/4,5*pi/4)" coordinates="polar" closed="yes" />
+            <ns1:graph function="f" domain="(-pi/4,pi/4)" coordinates="polar" closed="yes" stroke="UltraViolet" fill="#ab82c5" />
+            <ns1:graph function="f" domain="(3*pi/4,5*pi/4)" coordinates="polar" closed="yes" stroke="UltraViolet" />
             </ns1:group>
             <ns1:grid-axes coordinates="polar" spacings="((0,0.5,1),(0,30,360))" xlabel="x" ylabel="y" spacing-degrees="yes" stroke="gray" />
             </ns1:coordinates>
